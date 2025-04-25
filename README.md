@@ -58,6 +58,26 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
+---
+
+# Angular signals:
+
+```
+signals:
+https://angular.dev/guide/components/inputs
+```
+
+```
+Inject vs constructor per i service ed altro:
+In
+
+https://angular.dev/api/core/inject
+
+https://alyshovtapdig.medium.com/inject-vs-constructor-in-angular-which-one-should-you-use-en-dbdf1070739c#:~:text=Advantages%20and%20Disadvantages%20of%20Both,()%20is%20a%20better%20choice.
+
+https://www.youtube.com/watch?v=SMFhsSQvsEc
+```
+
 # Librerie:
 
 ## Kendo:
@@ -94,6 +114,12 @@ https://css-tricks.com/almanac/properties/p/position/
 
 come usare calc:
 https://css-tricks.com/a-complete-guide-to-calc-in-css/
+
+Animazioni:
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+
+bottoni custom:
+https://www.w3schools.com/howto/howto_css_icon_buttons.asp
 ```
 
 # Palette:

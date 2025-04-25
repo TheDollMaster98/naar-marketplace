@@ -1,1 +1,13 @@
 <p>home works!</p>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+  @for (item of items(); track item.title) {
+  <div class="col">
+    <app-item-card
+      [title]="item.title"
+      [description]="item.description"
+      [price]="item.price"
+      [imageUrl]="item.imageUrl"
+    />
+  </div>
+  }
+</div>
