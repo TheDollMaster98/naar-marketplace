@@ -72,5 +72,16 @@ https://www.telerik.com/kendo-angular-ui/components/getting-started
 # Assets:
 
 ```
+https://icons.getbootstrap.com
+```
+
+```
 https://www.figma.com/community/file/1108082731170738492
+```
+
+# Esempi:
+
+```
+side bard bootstrap 5:
+https://getbootstrap.com/docs/5.3/examples/sidebars/#
 ```
