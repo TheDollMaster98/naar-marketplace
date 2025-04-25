@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /* const globali dei componenti: */
 :root {
-  --navbar-height: 58px;
-  --sidebar-width: 4.5rem;
+  --navbar-height: 3.625rem;
+  --sidebar-width: 4rem;
   --avatar-size: 2rem;
   /* Palette colori globale */
   --color-primary: #8d00f9;
