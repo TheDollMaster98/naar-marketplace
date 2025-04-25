@@ -1,0 +1,12 @@
+header {
+  font-family: sans-serif;
+  height: 58px;
+}
+
+.logo-nav {
+  width: 2rem;
+}
+
+.navbar a {
+  cursor: pointer;
+}

@@ -69,18 +69,8 @@ https://www.telerik.com/kendo-angular-ui/components/getting-started
   ng add @progress/kendo-angular-grid
 ```
 
-# Architettura Clean Feature-based (preso spunto da altri progetti):
+# Assets:
 
 ```
-src/
-|-- app/
-│   |-- core/     // Principalmente servizi e model essendo piccolo come progetto.
-│   |-- shared/     // Componenti riutilizzabili, direttive, ecc.
-│   |-- features/
-│   │   |-- home/
-│   │   │   |-- components/     // item-card, nav-bar, ecc.
-│   │   │   |-- services/
-│   │   |-- register/
-│   │   │   |-- components/
-│   │   │   |-- services/
+https://www.figma.com/community/file/1108082731170738492
 ```
