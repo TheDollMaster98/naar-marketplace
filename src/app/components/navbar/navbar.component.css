@@ -1,6 +1,7 @@
 header {
   font-family: sans-serif;
-  height: 58px;
+  height: var(--navbar-height);
+  background-color: rgb(43, 10, 61);
 }
 
 .logo-nav {

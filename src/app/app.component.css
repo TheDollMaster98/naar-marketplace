@@ -1,0 +1,30 @@
+app-navbar {
+  position: fixed;
+  /* dovrebbe essere fissata giusto secondo css tricks: */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  z-index: 1050; /* TODO: capire cosa fare per essere sopra a tutti, ma avendo i suoi spazi */
+  display: block;
+}
+
+app-sidebar {
+  position: fixed;
+  /*TODO: capire come non farla stare sotto la navbar */
+  top: var(--navbar-height);
+  left: 0;
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-height));
+  overflow-y: auto;
+  /* display: block; */
+}
+
+main {
+  /* ho messo i margini delimitati dalla navbar e sidebar */
+  margin-top: var(--navbar-height);
+  margin-left: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-height));
+  overflow-y: auto;
+  padding: 1rem;
+}

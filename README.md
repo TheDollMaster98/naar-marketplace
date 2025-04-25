@@ -85,3 +85,19 @@ https://www.figma.com/community/file/1108082731170738492
 side bard bootstrap 5:
 https://getbootstrap.com/docs/5.3/examples/sidebars/#
 ```
+
+# CSS:
+
+```
+Come fixare sidebar, navbar, main per dargli spazio:
+https://css-tricks.com/almanac/properties/p/position/
+
+come usare calc:
+https://css-tricks.com/a-complete-guide-to-calc-in-css/
+```
+
+# Palette:
+
+```
+https://coolors.co/palette/fbfbfb-2b0a3d-8d00f9-be9fd6
+```

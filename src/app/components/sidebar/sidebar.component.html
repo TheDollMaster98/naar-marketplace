@@ -1,0 +1,24 @@
+<div class="flex-grow-1">
+  <ul class="nav nav-pills flex-column mb-auto text-center">
+    @for (section of sections; track section.route) {
+    <li>
+      <a
+        routerLink="{{ section.route }}"
+        routerLinkActive="active"
+        class="nav-link py-3 border-bottom rounded-0 text-white"
+        title="{{ section.title }}"
+        data-bs-toggle="tooltip"
+      >
+        <i class="bi {{ section.icon }} fs-5"></i>
+      </a>
+    </li>
+    }
+  </ul>
+</div>
+
+<!-- Avatar -->
+<div class="border-top py-3 d-flex justify-content-center">
+  <a href="#" class="text-white text-decoration-none">
+    <img src="/assets/propic.jpg" alt="user" class="rounded-circle avatar" />
+  </a>
+</div>
