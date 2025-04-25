@@ -7,4 +7,13 @@ export interface Item {
   id?: string; // TODO: capire se serve, credo di no essendo un mock
 }
 
-export type Category = 'Elettronica' | 'Abbigliamento' | 'Giocattoli' | 'Altro';
+export type Category =
+  | 'Elettronica'
+  | 'Abbigliamento'
+  | 'Giocattoli'
+  | 'Sport'
+  | '3D'
+  | 'UI'
+  | 'Design'
+  | 'Graphics'
+  | 'Template';
