@@ -13,18 +13,21 @@ export class MockItemsService {
       description: 'Descrizione prodotto 1',
       price: 104,
       imageUrl: 'assets/placeholder-image.webp',
+      category: 'Elettronica',
     },
     {
       title: 'Item 2',
       description: 'Descrizione prodotto 2',
       price: 49.99,
       imageUrl: 'assets/placeholder-image.webp',
+      category: 'Abbigliamento',
     },
     {
       title: 'Item 3',
       description: 'Descrizione prodotto 3',
       price: 75.55,
       imageUrl: 'assets/placeholder-image.webp',
+      category: 'Giocattoli',
     },
   ]);
 
