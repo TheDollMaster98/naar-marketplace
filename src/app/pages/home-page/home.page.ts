@@ -1,6 +1,6 @@
-import { MockItemsService } from './../services/mock-items.service';
+import { MockItemsService } from '../../services/mock-items.service';
 import { Component, inject } from '@angular/core';
-import { ItemCardComponent } from '../components/item-card/item-card.component';
+import { ItemCardComponent } from '../../components/item-card/item-card.component';
 
 @Component({
   selector: 'app-home',
