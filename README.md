@@ -89,6 +89,12 @@ https://www.telerik.com/kendo-angular-ui/components/getting-started
   ng add @progress/kendo-angular-grid
 ```
 
+```
+  ho messo loro per ora:
+  ng add @progress/kendo-angular-inputs
+  ng add @progress/kendo-angular-dateinputs
+```
+
 # Assets:
 
 ```
