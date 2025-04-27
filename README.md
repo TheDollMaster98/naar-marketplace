@@ -108,6 +108,7 @@ https://www.telerik.com/kendo-angular-ui/components/styling
   ng add @progress/kendo-angular-inputs
   ng add @progress/kendo-angular-dateinputs
   ng add @progress/kendo-angular-tooltip
+  npm install --save @progress/kendo-theme-bootstrap
 ```
 
 # Assets:
