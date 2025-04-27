@@ -1,4 +1,4 @@
-<div class="flex-grow-1">
+<div class="flex-grow-1" kendoTooltip position="right">
   <ul class="nav nav-pills flex-column mb-auto text-center">
     @for (section of sections; track section.route) {
     <li>
@@ -7,7 +7,6 @@
         routerLinkActive="active"
         class="nav-link py-3 border-bottom rounded-0 text-white"
         title="{{ section.title }}"
-        data-bs-toggle="tooltip"
       >
         <i class="bi {{ section.icon }} fs-5"></i>
       </a>
@@ -17,10 +16,12 @@
 </div>
 
 <!-- Avatar -->
-<a
-  routerLink="/register"
-  routerLinkActive="active"
-  class="nav-link border-top py-3 d-flex justify-content-center align-items-center"
->
-  <img src="/assets/propic.jpg" alt="user" class="rounded-circle avatar" />
-</a>
+<div kendoTooltip title="Profilo" position="right">
+  <a
+    routerLink="/register"
+    routerLinkActive="active"
+    class="nav-link border-top py-3 d-flex justify-content-center align-items-center"
+  >
+    <img src="/assets/propic.jpg" alt="user" class="rounded-circle avatar" />
+  </a>
+</div>

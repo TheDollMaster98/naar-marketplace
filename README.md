@@ -99,9 +99,15 @@ https://www.telerik.com/kendo-angular-ui/components/getting-started
 ```
 
 ```
+Style:
+https://www.telerik.com/kendo-angular-ui/components/styling
+```
+
+```
   ho messo loro per ora:
   ng add @progress/kendo-angular-inputs
   ng add @progress/kendo-angular-dateinputs
+  ng add @progress/kendo-angular-tooltip
 ```
 
 # Assets:

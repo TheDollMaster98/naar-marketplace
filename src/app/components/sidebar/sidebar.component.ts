@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { KENDO_POPOVER, KENDO_TOOLTIPS } from '@progress/kendo-angular-tooltip';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, KENDO_POPOVER, KENDO_TOOLTIPS],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })
