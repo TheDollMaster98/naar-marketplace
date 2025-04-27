@@ -10,7 +10,8 @@ import { RouterModule } from '@angular/router';
 })
 export class SidebarComponent {
   sections = [
-    { icon: 'bi-house', title: 'Home', route: '/' },
+    { icon: 'bi-house', title: 'Home', route: '/home' },
+    { icon: 'bi-grid', title: 'Products', route: '/products' },
     { icon: 'bi-person-circle', title: 'Profile', route: '/register' },
   ];
 }
