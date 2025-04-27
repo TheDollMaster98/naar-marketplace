@@ -5,13 +5,20 @@ import {
   Validators,
   ReactiveFormsModule,
 } from '@angular/forms';
-import { InputsModule } from '@progress/kendo-angular-inputs';
+import { FormFieldModule, InputsModule } from '@progress/kendo-angular-inputs';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { KENDO_LABEL } from '@progress/kendo-angular-label';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [ReactiveFormsModule, InputsModule, DateInputsModule],
+  imports: [
+    ReactiveFormsModule,
+    InputsModule,
+    DateInputsModule,
+    FormFieldModule,
+    KENDO_LABEL,
+  ],
   templateUrl: './register.page.html',
   styleUrl: './register.page.css',
 })
@@ -44,5 +51,9 @@ export class RegisterPage {
     } else {
       this.form.markAllAsTouched();
     }
+  }
+
+  clear(): void {
+    this.form.reset();
   }
 }

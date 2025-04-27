@@ -101,13 +101,19 @@ https://www.telerik.com/kendo-angular-ui/components/getting-started
 ```
 Style:
 https://www.telerik.com/kendo-angular-ui/components/styling
+
+https://www.telerik.com/design-system/docs/themes/kendo-themes/default/theme-variables/
 ```
 
 ```
   ho messo loro per ora:
   ng add @progress/kendo-angular-inputs
+  ng add @progress/kendo-angular-label
   ng add @progress/kendo-angular-dateinputs
   ng add @progress/kendo-angular-tooltip
+  ng add @progress/kendo-angular-layout
+
+  // LUI MI SA CHE DEVO TOGLIERLO:
   npm install --save @progress/kendo-theme-bootstrap
 ```
 

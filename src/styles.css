@@ -23,6 +23,3 @@ body {
 * {
   box-sizing: border-box;
 }
-/* TODO: https://www.telerik.com/design-system/docs/themes/kendo-themes/bootstrap/ */
-/* Import the entire theme */
-@use "@progress/kendo-theme-bootstrap/scss/all.scss" as *;

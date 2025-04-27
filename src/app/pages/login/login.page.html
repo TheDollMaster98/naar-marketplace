@@ -1,1 +1,79 @@
-<p>login works!</p>
+<div class="login-wrapper">
+  <form
+    class="k-form k-form-md login-form border series-e-subtler p-4 rounded"
+    [formGroup]="form"
+  >
+    <fieldset class="k-form-fieldset">
+      <legend class="k-form-legend series-e-bolder">Login</legend>
+
+      <!-- Avatar -->
+      <div class="text-center mb-3">
+        <kendo-avatar
+          initials="LD"
+          class="series-e-subtle"
+          width="80px"
+          height="80px"
+          shape="circle"
+        ></kendo-avatar>
+      </div>
+
+      <!-- Username -->
+      <kendo-formfield>
+        <kendo-label text="Username"></kendo-label>
+        <kendo-textbox
+          formControlName="username"
+          [clearButton]="true"
+          required
+        ></kendo-textbox>
+        <kendo-formhint>Inserisci il tuo username</kendo-formhint>
+        <kendo-formerror>Campo obbligatorio</kendo-formerror>
+      </kendo-formfield>
+
+      <!-- Password -->
+      <kendo-formfield>
+        <kendo-label text="Password"></kendo-label>
+        <kendo-textbox
+          formControlName="password"
+          [clearButton]="true"
+          required
+          #password
+        >
+          <ng-template kendoTextBoxSuffixTemplate>
+            <button
+              kendoButton
+              look="clear"
+              [svgIcon]="eye"
+              (click)="toggleVisibility()"
+              class="series-e-bold"
+            ></button>
+          </ng-template>
+        </kendo-textbox>
+        <kendo-formhint>Password account</kendo-formhint>
+        <kendo-formerror>Password obbligatoria</kendo-formerror>
+      </kendo-formfield>
+
+      <!-- Login automatico -->
+      <kendo-formfield>
+        <div class="k-checkbox-wrap">
+          <input type="checkbox" kendoCheckBox formControlName="loggedin" />
+          <kendo-label text="Resta connesso"></kendo-label>
+        </div>
+        <kendo-formhint>Login automatico al prossimo accesso</kendo-formhint>
+      </kendo-formfield>
+
+      <!-- Buttons -->
+      <div class="k-form-buttons mt-3">
+        <button kendoButton class="series-e" (click)="login()">Login</button>
+        <button kendoButton look="outline" (click)="clearForm()">Reset</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <!-- Register link -->
+  <div class="text-center mt-4">
+    <span>Non hai un account?</span>
+    <a routerLink="/register" class="text-decoration-none series-e-bold">
+      Registrati
+    </a>
+  </div>
+</div>

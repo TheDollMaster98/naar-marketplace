@@ -21,7 +21,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               {
-                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+                "input": "node_modules/@progress/kendo-theme-default/dist/default-purple.css"
               },
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -79,7 +79,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               {
-                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+                "input": "node_modules/@progress/kendo-theme-default/dist/default-purple.css"
               },
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",

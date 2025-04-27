@@ -1,57 +1,72 @@
-<div class="container mt-4">
-  <h2 class="mb-4 text-primary">Registrazione Utente</h2>
-
+<div class="register-wrapper">
   <form
+    class="k-form k-form-md register-form border p-4 rounded"
     [formGroup]="form"
-    (ngSubmit)="submit()"
-    novalidate
-    class="d-grid gap-3"
   >
-    <!-- Nome -->
-    <kendo-textbox
-      formControlName="firstName"
-      [class.is-invalid]="form.get('firstName')?.touched && form.get('firstName')?.invalid"
-      placeholder="Nome *"
-    ></kendo-textbox>
+    <fieldset class="k-form-fieldset">
+      <legend class="k-form-legend">Registrazione</legend>
 
-    <!-- Cognome -->
-    <kendo-textbox
-      formControlName="lastName"
-      [class.is-invalid]=" form.get('lastName')?.touched && form.get('lastName')?.invalid"
-      placeholder="Cognome *"
-    ></kendo-textbox>
+      <!-- Nome -->
+      <kendo-formfield>
+        <kendo-label text="Nome"></kendo-label>
+        <kendo-textbox formControlName="firstName" required></kendo-textbox>
+        <kendo-formerror>Campo obbligatorio</kendo-formerror>
+      </kendo-formfield>
 
-    <!-- Email -->
-    <kendo-textbox
-      formControlName="email"
-      [class.is-invalid]=" form.get('email')?.touched && form.get('email')?.invalid"
-      placeholder="Email *"
-    ></kendo-textbox>
+      <!-- Cognome -->
+      <kendo-formfield>
+        <kendo-label text="Cognome"></kendo-label>
+        <kendo-textbox formControlName="lastName" required></kendo-textbox>
+        <kendo-formerror>Campo obbligatorio</kendo-formerror>
+      </kendo-formfield>
 
-    <!-- Data di nascita -->
-    <kendo-datepicker
-      formControlName="birthDate"
-      [format]="'dd/MM/yyyy'"
-      placeholder="Data di nascita *"
-    ></kendo-datepicker>
+      <!-- Email -->
+      <kendo-formfield>
+        <kendo-label text="Email"></kendo-label>
+        <kendo-textbox formControlName="email" required></kendo-textbox>
+        <kendo-formerror>Email non valida</kendo-formerror>
+      </kendo-formfield>
 
-    <!-- Data di residenza -->
-    <kendo-datepicker
-      formControlName="residenceDate"
-      [format]="'dd/MM/yyyy'"
-      placeholder="Data di residenza *"
-    ></kendo-datepicker>
+      <!-- Data di nascita -->
+      <kendo-formfield>
+        <kendo-label text="Data di nascita"></kendo-label>
+        <kendo-datepicker
+          formControlName="birthDate"
+          [format]="'dd/MM/yyyy'"
+        ></kendo-datepicker>
+        <kendo-formerror>Campo obbligatorio</kendo-formerror>
+      </kendo-formfield>
 
-    <!-- Codice fiscale -->
-    <kendo-textbox
-      formControlName="fiscalCode"
-      [class.is-invalid]=" form.get('fiscalCode')?.touched && form.get('fiscalCode')?.invalid"
-      placeholder="Codice Fiscale *"
-    ></kendo-textbox>
+      <!-- Data di residenza -->
+      <kendo-formfield>
+        <kendo-label text="Data di residenza"></kendo-label>
+        <kendo-datepicker
+          formControlName="residenceDate"
+          [format]="'dd/MM/yyyy'"
+        ></kendo-datepicker>
+        <kendo-formerror>Campo obbligatorio</kendo-formerror>
+      </kendo-formfield>
 
-    <!-- Pulsante invio -->
-    <button type="submit" class="btn btn-primary mt-3">
-      Invia Registrazione
-    </button>
+      <!-- Codice fiscale -->
+      <kendo-formfield>
+        <kendo-label text="Codice Fiscale"></kendo-label>
+        <kendo-textbox formControlName="fiscalCode" required></kendo-textbox>
+        <kendo-formerror>Codice non valido</kendo-formerror>
+      </kendo-formfield>
+
+      <!-- Pulsanti -->
+      <!-- TODO: capire come emttere lo stile come il login -->
+      <div class="k-form-buttons mt-3">
+        <button kendoButton class="series-e" (click)="submit()">
+          Registrati
+        </button>
+        <button kendoButton look="outline" (click)="clear()">Reset</button>
+      </div>
+    </fieldset>
   </form>
+
+  <div class="text-center mt-4">
+    <span>Hai già un account?</span>
+    <a routerLink="/login" class="text-decoration-none series-e-bold">Accedi</a>
+  </div>
 </div>
