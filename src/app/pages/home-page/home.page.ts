@@ -1,4 +1,4 @@
-import { MockItemsService } from '../../services/mock-items.service';
+import { MockItemsService } from '../../services/mock/mock-items.service';
 import { Component, inject } from '@angular/core';
 import { ItemCardComponent } from '../../components/item-card/item-card.component';
 

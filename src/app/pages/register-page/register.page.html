@@ -1,1 +1,57 @@
-<p>register works!</p>
+<div class="container mt-4">
+  <h2 class="mb-4 text-primary">Registrazione Utente</h2>
+
+  <form
+    [formGroup]="form"
+    (ngSubmit)="submit()"
+    novalidate
+    class="d-grid gap-3"
+  >
+    <!-- Nome -->
+    <kendo-textbox
+      formControlName="firstName"
+      [class.is-invalid]="form.get('firstName')?.touched && form.get('firstName')?.invalid"
+      placeholder="Nome *"
+    ></kendo-textbox>
+
+    <!-- Cognome -->
+    <kendo-textbox
+      formControlName="lastName"
+      [class.is-invalid]=" form.get('lastName')?.touched && form.get('lastName')?.invalid"
+      placeholder="Cognome *"
+    ></kendo-textbox>
+
+    <!-- Email -->
+    <kendo-textbox
+      formControlName="email"
+      [class.is-invalid]=" form.get('email')?.touched && form.get('email')?.invalid"
+      placeholder="Email *"
+    ></kendo-textbox>
+
+    <!-- Data di nascita -->
+    <kendo-datepicker
+      formControlName="birthDate"
+      [format]="'dd/MM/yyyy'"
+      placeholder="Data di nascita *"
+    ></kendo-datepicker>
+
+    <!-- Data di residenza -->
+    <kendo-datepicker
+      formControlName="residenceDate"
+      [format]="'dd/MM/yyyy'"
+      placeholder="Data di residenza *"
+    ></kendo-datepicker>
+
+    <!-- Codice fiscale -->
+    <kendo-textbox
+      formControlName="fiscalCode"
+      [class.is-invalid]=" form.get('fiscalCode')?.touched && form.get('fiscalCode')?.invalid"
+      placeholder="Codice Fiscale *"
+    ></kendo-textbox>
+
+    <!-- Pulsante invio -->
+    <button type="submit" class="btn btn-primary mt-3">
+      Invia Registrazione
+    </button>
+  </form>
+</div>

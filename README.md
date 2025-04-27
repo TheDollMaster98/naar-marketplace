@@ -60,7 +60,7 @@ For more information on using the Angular CLI, including detailed command refere
 
 ---
 
-# Angular signals:
+# Angular:
 
 ```
 signals:
@@ -76,6 +76,15 @@ https://angular.dev/api/core/inject
 https://alyshovtapdig.medium.com/inject-vs-constructor-in-angular-which-one-should-you-use-en-dbdf1070739c#:~:text=Advantages%20and%20Disadvantages%20of%20Both,()%20is%20a%20better%20choice.
 
 https://www.youtube.com/watch?v=SMFhsSQvsEc
+```
+
+```
+Angular form:
+https://angular.dev/guide/forms
+https://angular.dev/guide/forms/reactive-forms
+https://angular.dev/api/forms/FormGroup
+
+https://angular.dev/guide/forms/form-validation
 ```
 
 # Librerie:
