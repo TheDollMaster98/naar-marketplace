@@ -13,6 +13,6 @@ export class SidebarComponent {
   sections = [
     { icon: 'bi-house', title: 'Home', route: '/home' },
     { icon: 'bi-grid', title: 'Products', route: '/products' },
-    { icon: 'bi-person-circle', title: 'Profile', route: '/register' },
+    { icon: 'bi-person-circle', title: 'Profile', route: '/login' },
   ];
 }
