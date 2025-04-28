@@ -8,6 +8,7 @@ import {
 import { FormFieldModule, InputsModule } from '@progress/kendo-angular-inputs';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { KENDO_LABEL } from '@progress/kendo-angular-label';
+import { ButtonModule } from '@progress/kendo-angular-buttons';
 
 @Component({
   selector: 'app-register',
@@ -17,6 +18,7 @@ import { KENDO_LABEL } from '@progress/kendo-angular-label';
     InputsModule,
     DateInputsModule,
     FormFieldModule,
+    ButtonModule,
     KENDO_LABEL,
   ],
   templateUrl: './register.page.html',
