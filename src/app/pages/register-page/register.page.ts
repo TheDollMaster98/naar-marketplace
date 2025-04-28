@@ -9,12 +9,14 @@ import { FormFieldModule, InputsModule } from '@progress/kendo-angular-inputs';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { KENDO_LABEL } from '@progress/kendo-angular-label';
 import { ButtonModule } from '@progress/kendo-angular-buttons';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [
     ReactiveFormsModule,
+    RouterModule,
     InputsModule,
     DateInputsModule,
     FormFieldModule,
