@@ -30,6 +30,7 @@
     "@progress/kendo-angular-label": "^18.5.2",
     "@progress/kendo-angular-layout": "^18.5.2",
     "@progress/kendo-angular-navigation": "18.5.2",
+    "@progress/kendo-angular-notification": "^18.5.2",
     "@progress/kendo-angular-popup": "18.5.2",
     "@progress/kendo-angular-progressbar": "18.5.2",
     "@progress/kendo-angular-tooltip": "^18.5.2",
