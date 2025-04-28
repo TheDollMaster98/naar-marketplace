@@ -4,6 +4,7 @@ import { HomePage } from './pages/home-page/home.page';
 import { RegisterPage } from './pages/register-page/register.page';
 import { ProductsPage } from './pages/products/products.page';
 import { LoginPage } from './pages/login/login.page';
+import { DebugPage } from './pages/debug/debug.page';
 
 export const routes: Routes = [
   { path: '', component: HomePage },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 'products', component: ProductsPage },
   { path: 'login', component: LoginPage },
   { path: 'register', component: RegisterPage },
+  { path: 'debug', component: DebugPage },
   { path: '**', redirectTo: '' }, //TODO: da fare pagina 404
 ];
