@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -15,6 +15,7 @@ import {
 } from '@progress/kendo-angular-notification';
 import { CommonModule } from '@angular/common';
 import { KENDO_LABEL } from '@progress/kendo-angular-label';
+import { RegisterService } from '../../services/register/register.service';
 
 @Component({
   selector: 'app-register',
@@ -35,6 +36,9 @@ import { KENDO_LABEL } from '@progress/kendo-angular-label';
 // REGEX per il codice fiscale italiano: https://regex101.com/r/bK2iF7/1/codegen?language=javascript
 export class RegisterPage {
   readonly form: FormGroup;
+
+  private readonly registerService = inject(RegisterService);
+  // readonly registeredUsers = this.registerService.registerUser;
 
   constructor(
     private fb: FormBuilder,

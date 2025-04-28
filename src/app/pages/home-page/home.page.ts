@@ -20,4 +20,10 @@ export class HomePage {
   // ! Non usare const quando si usa inject, altrimenti non si può usare il signal.
   private readonly mockService = inject(MockItemsService);
   readonly items = this.mockService.items; // è signal<Item[]>
+
+  // Carico i dati al caricamento del componente
+  ngOnInit(): void {
+    this.mockService.loadItems();
+    console.log('Items:', this.items());
+  }
 }

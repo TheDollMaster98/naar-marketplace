@@ -156,3 +156,22 @@ https://www.w3schools.com/howto/howto_css_icon_buttons.asp
 ```
 https://coolors.co/palette/fbfbfb-2b0a3d-8d00f9-be9fd6
 ```
+
+# MOCK JSON
+
+```
+ci ho messo ore per capirlo, ma credo di aver capito come crearlo
+[
+  '{{repeat(20)}}',
+  {
+    title: '{{company()}}',
+    description: '{{lorem(1, "sentences")}}',
+    price: '{{floating(10, 1000, 2)}}',
+    imageUrl: 'assets/placeholder-image.webp',
+    category: '{{random("Elettronica", "Abbigliamento", "Giocattoli", "Sport", "3D", "UI", "Design", "Graphics", "Template")}}'
+  }
+]
+
+https://json-generator.com
+
+```

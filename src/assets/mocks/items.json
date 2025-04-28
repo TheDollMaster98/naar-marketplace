@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Deminimum",
+    "description": "Consequat incididunt eiusmod ullamco laboris elit ea labore ut sit commodo ipsum elit.",
+    "price": 831.89,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Abbigliamento"
+  },
+  {
+    "title": "Valpreal",
+    "description": "Et do ipsum deserunt enim ea ex labore proident consequat mollit minim elit ullamco laborum.",
+    "price": 17.46,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Nexgene",
+    "description": "Elit dolore et reprehenderit sit elit ad aliqua elit et do ex consectetur laboris do.",
+    "price": 901.77,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  },
+  {
+    "title": "Sarasonic",
+    "description": "Nostrud eiusmod duis voluptate occaecat duis.",
+    "price": 563.09,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Songbird",
+    "description": "In nostrud aute elit esse aliquip consectetur culpa reprehenderit consectetur labore fugiat proident.",
+    "price": 456.33,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Ezentia",
+    "description": "Ad dolor qui magna ex mollit sit ullamco nostrud.",
+    "price": 656.75,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Koffee",
+    "description": "Elit ex voluptate in ex.",
+    "price": 815.53,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Abbigliamento"
+  },
+  {
+    "title": "Zaya",
+    "description": "Aliquip et aute ad sint cillum minim.",
+    "price": 149.64,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Decratex",
+    "description": "Aliquip quis in in Lorem esse enim labore ea dolore veniam ea.",
+    "price": 28.71,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Amtas",
+    "description": "Ex sunt exercitation et fugiat reprehenderit commodo ea aute sunt.",
+    "price": 853.04,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Abbigliamento"
+  },
+  {
+    "title": "Isotronic",
+    "description": "Duis commodo qui fugiat mollit pariatur esse cupidatat ut.",
+    "price": 914.18,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Sonique",
+    "description": "Aliqua ullamco non in sint nisi in cupidatat id non laboris.",
+    "price": 440.89,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Unisure",
+    "description": "Dolor aute incididunt cupidatat velit.",
+    "price": 142.9,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Keeg",
+    "description": "Quis exercitation culpa magna in enim eiusmod cillum ullamco consectetur anim voluptate.",
+    "price": 781.73,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Mediot",
+    "description": "Eiusmod qui consectetur occaecat magna velit ex reprehenderit Lorem laborum et do.",
+    "price": 88.22,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Abbigliamento"
+  },
+  {
+    "title": "Norali",
+    "description": "Ad sunt id mollit sit deserunt cupidatat consequat enim reprehenderit.",
+    "price": 169.63,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Combot",
+    "description": "Aute mollit irure ullamco aliqua sunt reprehenderit incididunt ad enim nulla incididunt.",
+    "price": 617.83,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Rubadub",
+    "description": "Sunt culpa mollit ut ad duis cupidatat.",
+    "price": 930.27,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Straloy",
+    "description": "Excepteur aliquip deserunt excepteur nulla consectetur aliqua duis ullamco.",
+    "price": 893.93,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Protodyne",
+    "description": "Eiusmod incididunt ad elit reprehenderit voluptate nisi do dolore enim id dolore minim.",
+    "price": 416,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  }
+]

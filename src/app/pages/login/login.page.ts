@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, inject, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import {
   TextBoxComponent,
@@ -11,6 +11,7 @@ import { eyeIcon, SVGIcon } from '@progress/kendo-svg-icons';
 import { AvatarModule } from '@progress/kendo-angular-layout';
 import { KENDO_LABEL } from '@progress/kendo-angular-label';
 import { RouterModule } from '@angular/router';
+import { RegisterService } from '../../services/register/register.service';
 
 @Component({
   selector: 'app-login',
@@ -29,6 +30,9 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./login.page.css'],
 })
 export class LoginPage {
+  private readonly registerService = inject(RegisterService);
+  // readonly registeredUsers = this.registerService.registerUser;
+
   @ViewChild('password') public textbox!: TextBoxComponent;
   public eye: SVGIcon = eyeIcon;
 
