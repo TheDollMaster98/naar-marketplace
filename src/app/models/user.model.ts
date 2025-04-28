@@ -3,6 +3,5 @@ export interface User {
   lastName: string;
   email: string;
   birthDate: Date;
-  residenceDate: Date;
   fiscalCode: string;
 }

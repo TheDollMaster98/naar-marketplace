@@ -93,8 +93,8 @@ https://angular.dev/guide/forms/form-validation
 
 ```
 https://www.telerik.com/kendo-angular-ui/components/getting-started
-  ng add @progress/kendo-angular-inputs
-  ng add @progress/kendo-angular-dateinputs
+
+https://www.telerik.com/kendo-angular-ui/components/notification
   ng add @progress/kendo-angular-grid
 ```
 
@@ -112,6 +112,7 @@ https://www.telerik.com/design-system/docs/themes/kendo-themes/default/theme-var
   ng add @progress/kendo-angular-dateinputs
   ng add @progress/kendo-angular-tooltip
   ng add @progress/kendo-angular-layout
+  ng add @progress/kendo-angular-notification
 
   // LUI MI SA CHE DEVO TOGLIERLO:
   npm install --save @progress/kendo-theme-bootstrap

@@ -1,0 +1,21 @@
+.notification-success {
+  background-color: #ac58ff;
+  color: #e63946;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.notification-error {
+  background-color: #e63946;
+  color: #e63946;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}

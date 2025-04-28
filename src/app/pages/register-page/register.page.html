@@ -1,6 +1,8 @@
-<div class="register-wrapper">
+<div
+  class="register-wrapper d-flex justify-content-center align-items-center flex-column"
+>
   <form
-    class="k-form k-form-md register-form border p-4 rounded"
+    class="k-form k-form-md register-form border p-4 rounded w-50"
     [formGroup]="form"
   >
     <fieldset class="k-form-fieldset">
@@ -32,16 +34,6 @@
         <kendo-label text="Data di nascita"></kendo-label>
         <kendo-datepicker
           formControlName="birthDate"
-          [format]="'dd/MM/yyyy'"
-        ></kendo-datepicker>
-        <kendo-formerror>Campo obbligatorio</kendo-formerror>
-      </kendo-formfield>
-
-      <!-- Data di residenza -->
-      <kendo-formfield>
-        <kendo-label text="Data di residenza"></kendo-label>
-        <kendo-datepicker
-          formControlName="residenceDate"
           [format]="'dd/MM/yyyy'"
         ></kendo-datepicker>
         <kendo-formerror>Campo obbligatorio</kendo-formerror>
