@@ -46,8 +46,29 @@
         <kendo-formerror>Codice non valido</kendo-formerror>
       </kendo-formfield>
 
+      <kendo-formfield>
+        <kendo-label text="Password"></kendo-label>
+        <kendo-textbox
+          formControlName="password"
+          [clearButton]="true"
+          required
+          #password
+        >
+          <ng-template kendoTextBoxSuffixTemplate>
+            <button
+              kendoButton
+              look="clear"
+              [svgIcon]="eye"
+              (click)="toggleVisibility()"
+              class="series-e-bold"
+            ></button>
+          </ng-template>
+        </kendo-textbox>
+        <kendo-formhint>Password account</kendo-formhint>
+        <kendo-formerror>Password obbligatoria</kendo-formerror>
+      </kendo-formfield>
+
       <!-- Pulsanti -->
-      <!-- TODO: capire come emttere lo stile come il login -->
       <div class="k-form-buttons mt-3">
         <button kendoButton class="series-e" (click)="submit()">
           Registrati

@@ -4,27 +4,33 @@ import { User } from '../../models/user.model';
 @Injectable({
   providedIn: 'root',
 })
-export class RegisterService {
+export class AuthService {
   // Lista utenti registrati
-  private readonly _registeredUsers = signal<User[]>([]);
+  private readonly _users = signal<User[]>([]);
 
   // ! Ho messo private e readonly per evitare di modificare la lista di users dall'esterno del servizio.
-  readonly users = this._registeredUsers.asReadonly();
+  readonly users = this._users.asReadonly();
 
   // metodo per aggiungere un utente alla lista di utenti registrati
   registerUser(user: User): void {
-    this._registeredUsers.update((users) => [...users, user]);
+    this._users.update((users) => [...users, user]);
+  }
+
+  // metodo per verificare se un utente è registrato
+  loginUser(username: string, password: string): boolean {
+    const user = this._users().find(
+      (u) => u.username === username && u.password === password
+    );
+    return !!user;
   }
 
   // metood per rimuovere tutti gli utenti registrati
   clear(): void {
-    this._registeredUsers.set([]);
+    this._users.set([]);
   }
 
   // metodo per rimuovere un utente dalla lista di utenti
   removeByEmail(email: string): void {
-    this._registeredUsers.update((users) =>
-      users.filter((u) => u.email !== email)
-    );
+    this._users.update((users) => users.filter((u) => u.email !== email));
   }
 }

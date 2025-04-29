@@ -1,11 +1,15 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ViewChild } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
   Validators,
   ReactiveFormsModule,
 } from '@angular/forms';
-import { FormFieldModule, InputsModule } from '@progress/kendo-angular-inputs';
+import {
+  FormFieldModule,
+  InputsModule,
+  TextBoxComponent,
+} from '@progress/kendo-angular-inputs';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { ButtonModule } from '@progress/kendo-angular-buttons';
 import { RouterModule, Router } from '@angular/router';
@@ -13,9 +17,9 @@ import {
   KENDO_NOTIFICATION,
   NotificationService,
 } from '@progress/kendo-angular-notification';
-import { CommonModule } from '@angular/common';
 import { KENDO_LABEL } from '@progress/kendo-angular-label';
-import { RegisterService } from '../../services/register/register.service';
+import { AuthService } from '../../services/auth/auth.service';
+import { eyeIcon, SVGIcon } from '@progress/kendo-svg-icons';
 
 @Component({
   selector: 'app-register',
@@ -34,10 +38,15 @@ import { RegisterService } from '../../services/register/register.service';
   styleUrl: './register.page.css',
 })
 // REGEX per il codice fiscale italiano: https://regex101.com/r/bK2iF7/1/codegen?language=javascript
+
+// REGEX per la password: https://www.geeksforgeeks.org/javascript-program-to-validate-password-using-regular-expressions/
 export class RegisterPage {
+  public eye: SVGIcon = eyeIcon;
+  @ViewChild('password') public textbox!: TextBoxComponent;
+
   readonly form: FormGroup;
 
-  private readonly registerService = inject(RegisterService);
+  private readonly authService = inject(AuthService);
   // readonly registeredUsers = this.registerService.registerUser;
 
   constructor(
@@ -49,11 +58,26 @@ export class RegisterPage {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      // * La password deve avere min 8 e max 15 caratteri, almeno una lettera maiuscola, una minuscola, un numero e un carattere speciale e non deve contenere spazi
+      password: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(8),
+          Validators.maxLength(15),
+          Validators.pattern(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$/
+          ),
+        ],
+      ],
       birthDate: [null, Validators.required],
+      // * Il codice fiscale deve essere di 16 caratteri + le altre condizioni
       fiscalCode: [
         '',
         [
           Validators.required,
+          Validators.minLength(16),
+          Validators.maxLength(16),
           Validators.pattern(
             /^[A-Z]{6}[0-9LMNPQRSTUV]{2}[ABCDEHLMPRST]{1}[0-7LMNPQRST]{1}[0-9LMNPQRSTUV]{1}[A-Z]{1}[0-9LMNPQRSTUV]{3}[A-Z]{1}$/
           ),
@@ -62,10 +86,26 @@ export class RegisterPage {
     });
   }
 
+  toggleVisibility(): void {
+    const input = this.textbox.input.nativeElement;
+    input.type = input.type === 'password' ? 'text' : 'password';
+  }
+
   submit(): void {
     if (this.form.valid) {
       // Simula la registrazione dell'utente
       console.log('Form inviato:', this.form.value);
+
+      this.authService.registerUser({
+        firstName: this.form.value.firstName,
+        lastName: this.form.value.lastName,
+        username: this.form.value.email, // alla fine ho scelto la email come username
+        password: this.form.value.password, // alla fine ho scelto di creare il campo per la psw
+        email: this.form.value.email,
+        birthDate: this.form.value.birthDate,
+        fiscalCode: this.form.value.fiscalCode,
+      });
+
       this.showCustomNotification(
         'Registrazione completata con successo!',
         'success'

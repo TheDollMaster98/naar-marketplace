@@ -1,5 +1,5 @@
 import { MockItemsService } from '../../services/mock/mock-items.service';
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { ItemCardComponent } from '../../components/item-card/item-card.component';
 
 @Component({
@@ -20,6 +20,9 @@ export class HomePage {
   // ! Non usare const quando si usa inject, altrimenti non si può usare il signal.
   private readonly mockService = inject(MockItemsService);
   readonly items = this.mockService.items; // è signal<Item[]>
+
+  //TODO: se riesco aggiungo il loading
+  isLoading = signal<boolean>(true);
 
   // Carico i dati al caricamento del componente
   ngOnInit(): void {
