@@ -113,6 +113,7 @@ https://www.telerik.com/design-system/docs/themes/kendo-themes/default/theme-var
   ng add @progress/kendo-angular-tooltip
   ng add @progress/kendo-angular-layout
   ng add @progress/kendo-angular-notification
+  ng add @progress/kendo-angular-grid
 
   // LUI MI SA CHE DEVO TOGLIERLO:
   npm install --save @progress/kendo-theme-bootstrap
