@@ -4,6 +4,7 @@ import {
   FormGroup,
   Validators,
   ReactiveFormsModule,
+  FormControl,
 } from '@angular/forms';
 import {
   FormFieldModule,
@@ -55,34 +56,35 @@ export class RegisterPage {
     private router: Router
   ) {
     this.form = this.fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
+      firstName: new FormControl('', [
+        Validators.required,
+        Validators.minLength(2),
+      ]),
+
+      lastName: new FormControl('', [
+        Validators.required,
+        Validators.minLength(2),
+      ]),
+      email: new FormControl('', [Validators.required, Validators.email]),
       // * La password deve avere min 8 e max 15 caratteri, almeno una lettera maiuscola, una minuscola, un numero e un carattere speciale e non deve contenere spazi
-      password: [
-        '',
-        [
-          Validators.required,
-          Validators.minLength(8),
-          Validators.maxLength(15),
-          Validators.pattern(
-            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$/
-          ),
-        ],
-      ],
-      birthDate: [null, Validators.required],
+      password: new FormControl('', [
+        Validators.required,
+        Validators.minLength(8),
+        Validators.maxLength(15),
+        Validators.pattern(
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$/
+        ),
+      ]),
+      birthDate: new FormControl(null, [Validators.required]),
       // * Il codice fiscale deve essere di 16 caratteri + le altre condizioni
-      fiscalCode: [
-        '',
-        [
-          Validators.required,
-          Validators.minLength(16),
-          Validators.maxLength(16),
-          Validators.pattern(
-            /^[A-Z]{6}[0-9LMNPQRSTUV]{2}[ABCDEHLMPRST]{1}[0-7LMNPQRST]{1}[0-9LMNPQRSTUV]{1}[A-Z]{1}[0-9LMNPQRSTUV]{3}[A-Z]{1}$/
-          ),
-        ],
-      ],
+      fiscalCode: new FormControl('', [
+        Validators.required,
+        Validators.minLength(16),
+        Validators.maxLength(16),
+        Validators.pattern(
+          /^[A-Z]{6}[0-9LMNPQRSTUV]{2}[ABCDEHLMPRST]{1}[0-7LMNPQRST]{1}[0-9LMNPQRSTUV]{1}[A-Z]{1}[0-9LMNPQRSTUV]{3}[A-Z]{1}$/
+        ),
+      ]),
     });
   }
 

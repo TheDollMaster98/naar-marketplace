@@ -22,6 +22,8 @@ ci ho messo ore per capirlo, ma credo di aver capito come crearlo
 
 https://json-generator.com
  */
+
+// * fake chiamata MOCK API: https://www.youtube.com/watch?v=9gK9H9-PQB8
 export class MockItemsService {
   // ! Ho messo private e readonly per evitare di modificare la lista di items dall'esterno del servizio.
   // ! Per modificare la lista di items usare il metodo addItem.
@@ -55,6 +57,9 @@ export class MockItemsService {
   readonly items = computed(() => this._items());
 
   constructor(private http: HttpClient) {}
+
+  // * RxJS: https://rxjs.dev/guide/observer
+  // * https://rxjs.dev/api
 
   /**
    * Carica gli items del JSON e li memorizza in un signal

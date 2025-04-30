@@ -85,6 +85,10 @@ https://angular.dev/guide/forms/reactive-forms
 https://angular.dev/api/forms/FormGroup
 
 https://angular.dev/guide/forms/form-validation
+
+Angular FORM: https://www.youtube.com/watch?v=COgVXd4rd_8
+
+fake chiamata MOCK API: https://www.youtube.com/watch?v=9gK9H9-PQB8
 ```
 
 # Librerie:
@@ -113,10 +117,6 @@ https://www.telerik.com/design-system/docs/themes/kendo-themes/default/theme-var
   ng add @progress/kendo-angular-tooltip
   ng add @progress/kendo-angular-layout
   ng add @progress/kendo-angular-notification
-  ng add @progress/kendo-angular-grid
-
-  // LUI MI SA CHE DEVO TOGLIERLO:
-  npm install --save @progress/kendo-theme-bootstrap
 ```
 
 # Assets:
@@ -158,7 +158,7 @@ https://www.w3schools.com/howto/howto_css_icon_buttons.asp
 https://coolors.co/palette/fbfbfb-2b0a3d-8d00f9-be9fd6
 ```
 
-# MOCK JSON
+# MOCK JSON & Fake Chiamata API
 
 ```
 ci ho messo ore per capirlo, ma credo di aver capito come crearlo
@@ -175,4 +175,8 @@ ci ho messo ore per capirlo, ma credo di aver capito come crearlo
 
 https://json-generator.com
 
+fake chiamata MOCK API: https://www.youtube.com/watch?v=9gK9H9-PQB8
+
+RxJS: https://rxjs.dev/guide/observer
+https://rxjs.dev/api
 ```
