@@ -150,6 +150,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 
 bottoni custom:
 https://www.w3schools.com/howto/howto_css_icon_buttons.asp
+
+Carosello cards:
+https://css-tricks.com/pure-css-horizontal-scrolling/
+
+Infinite horizontal scroll:
+https://www.youtube.com/watch?v=0QI4ymWwpG0
 ```
 
 # Palette:

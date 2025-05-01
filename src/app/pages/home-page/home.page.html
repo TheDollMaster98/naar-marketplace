@@ -1,12 +1,29 @@
-<div class="d-flex flex-wrap justify-content-center gap-4">
-  @for (item of items(); track item.title) {
-  <div class="col">
-    <app-item-card
-      [title]="item.title"
-      [description]="item.description"
-      [price]="item.price"
-      [imageUrl]="item.imageUrl"
-    />
+<div class="carousel-wrapper">
+  <h2 class="mb-3">Recent Releases</h2>
+  <div class="carousel-scroll">
+    <div>
+      @for (item of items(); track item.title) {
+      <span>
+        <app-item-card
+          [title]="item.title"
+          [description]="item.description"
+          [price]="item.price"
+          [imageUrl]="item.imageUrl"
+        />
+      </span>
+      }
+    </div>
+    <div>
+      @for (item of items(); track item.title) {
+      <span>
+        <app-item-card
+          [title]="item.title"
+          [description]="item.description"
+          [price]="item.price"
+          [imageUrl]="item.imageUrl"
+        />
+      </span>
+      }
+    </div>
   </div>
-  }
 </div>

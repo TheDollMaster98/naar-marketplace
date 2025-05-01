@@ -18,6 +18,16 @@
   color: var(--color-primary);
 }
 
+/* messo lui per non fare andare il testo a capo e per aggiungere i ... */
+.card-title,
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+}
+
 .card-footer {
   background-color: transparent;
   border-top: 1px solid var(--color-accent);

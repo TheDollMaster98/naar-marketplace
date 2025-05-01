@@ -1,0 +1,75 @@
+/* TODO: sicuro non so spiegarlo al 100% visto che il video era in Hindi, W il tutorial di youtube visto giovedì sera alle 23 */
+
+/* TODO: da creare un componente, in modo da creare più caroselli per le sezioni, problema: non so come bloccarlo. */
+
+/* TODO: TOGLIERE LE ANIMAZIONI PER FARLO SCORRERE A MANO, CERCARE UN TUTORIAL. */
+
+.carousel-wrapper {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.carousel-scroll {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  /* Velocità del carosello */
+  --time: 35s;
+
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #f5f5f5 20%,
+    #f5f5f5 80%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #f5f5f5 20%,
+    #f5f5f5 80%,
+    transparent
+  );
+}
+/* Per il carosello credo abbiamo creato 2 div che si sovrappongono uno sopra l'altro per andare sopra */
+.carousel-scroll div {
+  white-space: nowrap;
+  display: flex;
+  animation: scroll var(--time) linear infinite;
+  animation-delay: calc(var(--time) * -1);
+}
+
+.carousel-scroll div:nth-child(2) {
+  animation: scroll2 var(--time) linear infinite;
+  animation-delay: calc(var(--time) / -2);
+}
+
+.carousel-scroll span {
+  display: inline-flex;
+  margin: 10px;
+  padding: 0;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Scorrimento da sx a dx */
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Secondo scorrimento */
+@keyframes scroll2 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
