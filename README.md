@@ -156,6 +156,9 @@ https://css-tricks.com/pure-css-horizontal-scrolling/
 
 Infinite horizontal scroll:
 https://www.youtube.com/watch?v=0QI4ymWwpG0
+
+DA VEDERE LUI DOMANI:
+https://www.youtube.com/watch?v=rdqjMN7Q-bk
 ```
 
 # Palette:
