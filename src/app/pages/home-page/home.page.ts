@@ -2,11 +2,12 @@ import { MockItemsService } from '../../services/mock/mock-items.service';
 import { Component, inject, signal } from '@angular/core';
 import { CarouselScrollComponent } from '../../components/carousel-scroll/carousel-scroll/carousel-scroll.component';
 import { Category } from '../../models/card.model';
+import { ItemCardComponent } from '../../components/item-card/item-card.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselScrollComponent],
+  imports: [CarouselScrollComponent, ItemCardComponent],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })

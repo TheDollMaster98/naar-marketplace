@@ -4,12 +4,17 @@
   </h3> -->
 
   <!-- bottoni per lo scroll -->
-  <div class="pb-3 d-flex justify-content-between gap-2">
+  <div class="pb-3 d-flex justify-content-between">
     <h3 class="mb-3 text-start">
       {{ genre() }}
     </h3>
     <div>
-      <button kendoButton [svgIcon]="arrowLeft" (click)="scrollLeft()"></button>
+      <button
+        kendoButton
+        class="me-2"
+        [svgIcon]="arrowLeft"
+        (click)="scrollLeft()"
+      ></button>
       <button
         kendoButton
         [svgIcon]="arrowRight"
@@ -31,7 +36,7 @@
           [description]="item.description"
           [price]="item.price"
           [imageUrl]="item.imageUrl"
-        />
+        ></app-item-card>
       </div>
       }
     </div>
