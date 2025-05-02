@@ -1,11 +1,12 @@
 import { MockItemsService } from '../../services/mock/mock-items.service';
 import { Component, inject, signal } from '@angular/core';
-import { ItemCardComponent } from '../../components/item-card/item-card.component';
+import { CarouselScrollComponent } from '../../components/carousel-scroll/carousel-scroll/carousel-scroll.component';
+import { Category } from '../../models/card.model';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ItemCardComponent],
+  imports: [CarouselScrollComponent],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })
@@ -20,6 +21,8 @@ export class HomePage {
   // ! Non usare const quando si usa inject, altrimenti non si può usare il signal.
   private readonly mockService = inject(MockItemsService);
   readonly items = this.mockService.items; // è signal<Item[]>
+
+  readonly categories = Category; // ENUM delle categorie
 
   //TODO: se riesco aggiungo il loading
   isLoading = signal<boolean>(true);

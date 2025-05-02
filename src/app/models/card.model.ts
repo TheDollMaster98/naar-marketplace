@@ -7,13 +7,15 @@ export interface Item {
   id?: string; // TODO: capire se serve, credo di no essendo un mock
 }
 
-export type Category =
-  | 'Elettronica'
-  | 'Abbigliamento'
-  | 'Giocattoli'
-  | 'Sport'
-  | '3D'
-  | 'UI'
-  | 'Design'
-  | 'Graphics'
-  | 'Template';
+// TODO: avrei dovuto farlo anche nei mock per renderlo più realistico per delle fake traduzioni, ma non ci ho pensato
+export enum Category {
+  ELECTRO = 'Elettronica',
+  SUIT = 'Abbigliamento',
+  TOYS = 'Giocattoli',
+  SPORT = 'Sport',
+  GRAPHIC3D = '3D',
+  UI = 'UI',
+  DESIGN = 'Design',
+  GRAPHIC = 'Graphics',
+  OTHERS = 'Template',
+}

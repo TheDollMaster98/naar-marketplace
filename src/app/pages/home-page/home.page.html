@@ -1,29 +1,8 @@
 <div class="carousel-wrapper">
   <h2 class="mb-3">Recent Releases</h2>
-  <div class="carousel-scroll">
-    <div>
-      @for (item of items(); track item.title) {
-      <span>
-        <app-item-card
-          [title]="item.title"
-          [description]="item.description"
-          [price]="item.price"
-          [imageUrl]="item.imageUrl"
-        />
-      </span>
-      }
-    </div>
-    <div>
-      @for (item of items(); track item.title) {
-      <span>
-        <app-item-card
-          [title]="item.title"
-          [description]="item.description"
-          [price]="item.price"
-          [imageUrl]="item.imageUrl"
-        />
-      </span>
-      }
-    </div>
-  </div>
+
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.ELECTRO"
+  ></app-carousel-scroll>
 </div>

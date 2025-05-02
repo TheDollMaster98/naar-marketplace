@@ -1,0 +1,10 @@
+/* https://web.dev/articles/css-scroll-snap?hl=it */
+.carousel-scroll-container {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel-slide {
+  width: 300px;
+  scroll-snap-align: start;
+}

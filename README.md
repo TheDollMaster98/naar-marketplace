@@ -159,6 +159,12 @@ https://www.youtube.com/watch?v=0QI4ymWwpG0
 
 DA VEDERE LUI DOMANI:
 https://www.youtube.com/watch?v=rdqjMN7Q-bk
+
+Questo forse è giusto per lo scroll a mano:
+https://web.dev/articles/css-scroll-snap?hl=it
+https://www.reddit.com/r/angular/comments/1cobwnw/filtering_on_for_in_angular_17/
+https://www.youtube.com/watch?app=desktop&v=kHPm_AlxP7U
+
 ```
 
 # Palette:
@@ -172,7 +178,7 @@ https://coolors.co/palette/fbfbfb-2b0a3d-8d00f9-be9fd6
 ```
 ci ho messo ore per capirlo, ma credo di aver capito come crearlo
 [
-  '{{repeat(20)}}',
+  '{{repeat(100)}}',
   {
     title: '{{company()}}',
     description: '{{lorem(1, "sentences")}}',

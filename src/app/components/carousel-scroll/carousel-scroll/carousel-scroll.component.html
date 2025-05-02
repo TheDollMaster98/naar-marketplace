@@ -1,1 +1,39 @@
-<p>carousel-scroll works!</p>
+<div class="carousel-wrapper container-fluid">
+  <!-- <h3 class="mb-3 text-start">
+    {{ genre() }}
+  </h3> -->
+
+  <!-- bottoni per lo scroll -->
+  <div class="pb-3 d-flex justify-content-between gap-2">
+    <h3 class="mb-3 text-start">
+      {{ genre() }}
+    </h3>
+    <div>
+      <button kendoButton [svgIcon]="arrowLeft" (click)="scrollLeft()"></button>
+      <button
+        kendoButton
+        [svgIcon]="arrowRight"
+        (click)="scrollRight()"
+      ></button>
+    </div>
+  </div>
+
+  <div class="position-relative">
+    <!-- Scroll container -->
+    <div
+      class="carousel-scroll-container d-flex overflow-auto px-4"
+      #scrollContainer
+    >
+      @for (item of items() | filter: genre(); track item.title) {
+      <div class="carousel-slide flex-shrink-0 me-3">
+        <app-item-card
+          [title]="item.title"
+          [description]="item.description"
+          [price]="item.price"
+          [imageUrl]="item.imageUrl"
+        />
+      </div>
+      }
+    </div>
+  </div>
+</div>

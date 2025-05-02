@@ -1,142 +1,702 @@
 [
   {
-    "title": "Deminimum",
-    "description": "Consequat incididunt eiusmod ullamco laboris elit ea labore ut sit commodo ipsum elit.",
-    "price": 831.89,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "Abbigliamento"
-  },
-  {
-    "title": "Valpreal",
-    "description": "Et do ipsum deserunt enim ea ex labore proident consequat mollit minim elit ullamco laborum.",
-    "price": 17.46,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "Template"
-  },
-  {
-    "title": "Nexgene",
-    "description": "Elit dolore et reprehenderit sit elit ad aliqua elit et do ex consectetur laboris do.",
-    "price": 901.77,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "Sport"
-  },
-  {
-    "title": "Sarasonic",
-    "description": "Nostrud eiusmod duis voluptate occaecat duis.",
-    "price": 563.09,
+    "title": "Soprano",
+    "description": "Nostrud nostrud quis eu cillum nisi anim labore exercitation dolore voluptate in.",
+    "price": 659.82,
     "imageUrl": "assets/placeholder-image.webp",
     "category": "UI"
   },
   {
-    "title": "Songbird",
-    "description": "In nostrud aute elit esse aliquip consectetur culpa reprehenderit consectetur labore fugiat proident.",
-    "price": 456.33,
+    "title": "Medifax",
+    "description": "Nulla reprehenderit est tempor pariatur commodo.",
+    "price": 399.53,
     "imageUrl": "assets/placeholder-image.webp",
-    "category": "3D"
+    "category": "Elettronica"
   },
   {
-    "title": "Ezentia",
-    "description": "Ad dolor qui magna ex mollit sit ullamco nostrud.",
-    "price": 656.75,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "Template"
-  },
-  {
-    "title": "Koffee",
-    "description": "Elit ex voluptate in ex.",
-    "price": 815.53,
+    "title": "Geekko",
+    "description": "Lorem tempor consequat nostrud culpa.",
+    "price": 690.77,
     "imageUrl": "assets/placeholder-image.webp",
     "category": "Abbigliamento"
   },
   {
-    "title": "Zaya",
-    "description": "Aliquip et aute ad sint cillum minim.",
-    "price": 149.64,
+    "title": "Genmex",
+    "description": "Velit mollit do laboris sunt.",
+    "price": 806.87,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  },
+  {
+    "title": "Cinesanct",
+    "description": "Veniam anim occaecat exercitation esse.",
+    "price": 483.99,
     "imageUrl": "assets/placeholder-image.webp",
     "category": "3D"
   },
   {
-    "title": "Decratex",
-    "description": "Aliquip quis in in Lorem esse enim labore ea dolore veniam ea.",
-    "price": 28.71,
+    "title": "Bunga",
+    "description": "Occaecat culpa duis aliquip enim veniam consequat veniam veniam excepteur commodo consequat elit sit mollit.",
+    "price": 197.11,
     "imageUrl": "assets/placeholder-image.webp",
     "category": "Giocattoli"
   },
   {
-    "title": "Amtas",
-    "description": "Ex sunt exercitation et fugiat reprehenderit commodo ea aute sunt.",
-    "price": 853.04,
+    "title": "Duflex",
+    "description": "Ex incididunt exercitation aute nostrud incididunt labore.",
+    "price": 364.9,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Unq",
+    "description": "Aliquip cupidatat officia dolore proident qui nulla excepteur elit occaecat minim.",
+    "price": 962.54,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Twiggery",
+    "description": "Culpa exercitation aute minim velit voluptate elit nulla nisi eu quis minim cupidatat pariatur.",
+    "price": 609.36,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Pyrami",
+    "description": "Aliqua ipsum id esse ex ipsum pariatur aliqua enim magna.",
+    "price": 631.81,
     "imageUrl": "assets/placeholder-image.webp",
     "category": "Abbigliamento"
   },
   {
-    "title": "Isotronic",
-    "description": "Duis commodo qui fugiat mollit pariatur esse cupidatat ut.",
-    "price": 914.18,
+    "title": "Darwinium",
+    "description": "Fugiat non fugiat et cillum nisi pariatur aute irure commodo non pariatur fugiat aute aute.",
+    "price": 206.99,
     "imageUrl": "assets/placeholder-image.webp",
-    "category": "Elettronica"
-  },
-  {
-    "title": "Sonique",
-    "description": "Aliqua ullamco non in sint nisi in cupidatat id non laboris.",
-    "price": 440.89,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "3D"
-  },
-  {
-    "title": "Unisure",
-    "description": "Dolor aute incididunt cupidatat velit.",
-    "price": 142.9,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "Elettronica"
+    "category": "Abbigliamento"
   },
   {
     "title": "Keeg",
-    "description": "Quis exercitation culpa magna in enim eiusmod cillum ullamco consectetur anim voluptate.",
-    "price": 781.73,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "Template"
-  },
-  {
-    "title": "Mediot",
-    "description": "Eiusmod qui consectetur occaecat magna velit ex reprehenderit Lorem laborum et do.",
-    "price": 88.22,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "Abbigliamento"
-  },
-  {
-    "title": "Norali",
-    "description": "Ad sunt id mollit sit deserunt cupidatat consequat enim reprehenderit.",
-    "price": 169.63,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "Template"
-  },
-  {
-    "title": "Combot",
-    "description": "Aute mollit irure ullamco aliqua sunt reprehenderit incididunt ad enim nulla incididunt.",
-    "price": 617.83,
+    "description": "Ut irure consectetur mollit dolore do consectetur amet ullamco nostrud qui aute.",
+    "price": 48.58,
     "imageUrl": "assets/placeholder-image.webp",
     "category": "Elettronica"
   },
   {
-    "title": "Rubadub",
-    "description": "Sunt culpa mollit ut ad duis cupidatat.",
-    "price": 930.27,
-    "imageUrl": "assets/placeholder-image.webp",
-    "category": "3D"
-  },
-  {
-    "title": "Straloy",
-    "description": "Excepteur aliquip deserunt excepteur nulla consectetur aliqua duis ullamco.",
-    "price": 893.93,
+    "title": "Katakana",
+    "description": "Mollit velit exercitation reprehenderit sit ullamco do aute culpa voluptate.",
+    "price": 451.24,
     "imageUrl": "assets/placeholder-image.webp",
     "category": "Template"
   },
   {
-    "title": "Protodyne",
-    "description": "Eiusmod incididunt ad elit reprehenderit voluptate nisi do dolore enim id dolore minim.",
-    "price": 416,
+    "title": "Junipoor",
+    "description": "Amet qui tempor ea in amet voluptate veniam excepteur excepteur id pariatur tempor.",
+    "price": 697.84,
     "imageUrl": "assets/placeholder-image.webp",
     "category": "Sport"
+  },
+  {
+    "title": "Exotechno",
+    "description": "Enim tempor in cillum irure laboris tempor anim qui in reprehenderit aliquip culpa.",
+    "price": 677.41,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Exospeed",
+    "description": "Lorem adipisicing dolor aute officia velit aliquip qui in eiusmod pariatur.",
+    "price": 50.32,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Lumbrex",
+    "description": "Tempor reprehenderit ullamco mollit irure eu nulla pariatur do adipisicing do ullamco tempor reprehenderit.",
+    "price": 257.17,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Lyrichord",
+    "description": "Elit non velit culpa enim dolor incididunt voluptate ea dolore enim.",
+    "price": 42.76,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Indexia",
+    "description": "Laboris in qui labore qui esse occaecat pariatur do consectetur mollit.",
+    "price": 110.15,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Rubadub",
+    "description": "Veniam ullamco non ullamco ad cupidatat eu.",
+    "price": 521.85,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Buzzmaker",
+    "description": "Anim et magna officia et magna sunt ad.",
+    "price": 246.21,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  },
+  {
+    "title": "Plasmox",
+    "description": "Amet fugiat et proident fugiat culpa cillum Lorem amet nisi.",
+    "price": 750.69,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Buzzopia",
+    "description": "Ut qui exercitation aliquip ipsum culpa qui voluptate qui sunt.",
+    "price": 857.59,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Design"
+  },
+  {
+    "title": "Veraq",
+    "description": "Voluptate aliquip deserunt culpa irure nisi enim velit est.",
+    "price": 557.94,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Enjola",
+    "description": "Nulla voluptate adipisicing consectetur velit voluptate laborum minim est reprehenderit aliqua.",
+    "price": 973.44,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Waab",
+    "description": "Aute occaecat exercitation est anim irure et aute in.",
+    "price": 179.56,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Centregy",
+    "description": "Duis magna aliqua adipisicing nulla anim nostrud mollit.",
+    "price": 330.3,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Typhonica",
+    "description": "Labore consectetur fugiat qui ea commodo magna ea exercitation.",
+    "price": 946.95,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Lingoage",
+    "description": "Ea irure in proident nulla est nostrud.",
+    "price": 144.26,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Barkarama",
+    "description": "Enim anim pariatur voluptate Lorem do mollit Lorem laboris eiusmod sit amet quis fugiat nostrud.",
+    "price": 151.64,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  },
+  {
+    "title": "Ecosys",
+    "description": "Adipisicing laboris sunt ea culpa fugiat consectetur nostrud laboris ex dolor anim non.",
+    "price": 604.4,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Tropolis",
+    "description": "Et eiusmod laboris dolor fugiat.",
+    "price": 582.19,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Eplode",
+    "description": "In aliquip sint culpa pariatur ex.",
+    "price": 839.32,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Matrixity",
+    "description": "Qui velit sit minim proident deserunt officia veniam ad reprehenderit occaecat laborum ad adipisicing.",
+    "price": 502.41,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Realmo",
+    "description": "Do excepteur nostrud aute deserunt Lorem ipsum non dolor ad labore.",
+    "price": 479.16,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Parleynet",
+    "description": "Ut ipsum culpa nisi eiusmod enim nostrud amet consequat tempor dolore.",
+    "price": 193.59,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Synkgen",
+    "description": "Amet laboris in irure magna mollit et nulla sunt sint.",
+    "price": 637.56,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Niquent",
+    "description": "Culpa incididunt ut et est adipisicing cillum exercitation veniam duis reprehenderit do.",
+    "price": 13.02,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Biospan",
+    "description": "Laboris aute enim laborum reprehenderit amet nostrud et.",
+    "price": 373.65,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Hatology",
+    "description": "Proident excepteur officia duis ipsum voluptate excepteur aliqua fugiat consectetur proident pariatur id sint sunt.",
+    "price": 241.2,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Mediot",
+    "description": "Est elit nulla amet fugiat labore dolor ex fugiat.",
+    "price": 974.81,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Abbigliamento"
+  },
+  {
+    "title": "Providco",
+    "description": "Dolor dolor voluptate commodo ipsum dolore exercitation laboris excepteur fugiat cupidatat sunt duis.",
+    "price": 687.25,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Vertide",
+    "description": "Esse irure eiusmod magna eiusmod cillum ex labore occaecat nulla eiusmod cupidatat enim Lorem cupidatat.",
+    "price": 154.55,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  },
+  {
+    "title": "Concility",
+    "description": "Ea tempor esse esse do fugiat mollit irure magna pariatur veniam tempor sunt sit culpa.",
+    "price": 564.3,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Design"
+  },
+  {
+    "title": "Ziore",
+    "description": "Lorem consectetur est cupidatat voluptate.",
+    "price": 414.86,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Qnekt",
+    "description": "Aliqua in anim velit incididunt nisi voluptate occaecat excepteur laborum qui anim ut qui.",
+    "price": 181.52,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Geeky",
+    "description": "Occaecat sint enim velit tempor dolor excepteur amet ex do.",
+    "price": 756.12,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Helixo",
+    "description": "Cupidatat eiusmod dolor proident esse enim exercitation.",
+    "price": 121.62,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Design"
+  },
+  {
+    "title": "Jetsilk",
+    "description": "Sunt dolor excepteur est et velit eu sint voluptate excepteur est cupidatat ex exercitation ullamco.",
+    "price": 223.15,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Biolive",
+    "description": "Quis minim non voluptate aliquip.",
+    "price": 898.6,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Quantasis",
+    "description": "Proident adipisicing excepteur adipisicing sit.",
+    "price": 581.74,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Terascape",
+    "description": "Proident nisi qui ea officia Lorem tempor veniam ullamco fugiat anim quis duis magna.",
+    "price": 219.4,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Icology",
+    "description": "Non elit aliquip ad occaecat ullamco magna proident duis.",
+    "price": 219.82,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Ewaves",
+    "description": "Enim cillum ut exercitation veniam.",
+    "price": 620.14,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Comtext",
+    "description": "In non dolore officia et nostrud nisi anim minim deserunt cillum officia.",
+    "price": 275.18,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Inventure",
+    "description": "Culpa sit magna officia exercitation occaecat officia excepteur pariatur cillum cupidatat consequat ad fugiat.",
+    "price": 869.69,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Pushcart",
+    "description": "Esse nisi pariatur proident fugiat quis.",
+    "price": 67.28,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Abbigliamento"
+  },
+  {
+    "title": "Biotica",
+    "description": "Non ea veniam sit laboris ea duis ex Lorem nulla aliquip velit aute reprehenderit.",
+    "price": 332.06,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  },
+  {
+    "title": "Eschoir",
+    "description": "Qui consequat consequat pariatur ut eu labore non cillum culpa laboris sunt sunt enim nostrud.",
+    "price": 969.7,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Cytrak",
+    "description": "Sint Lorem sit aliqua qui.",
+    "price": 346.92,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Hawkster",
+    "description": "Aute et exercitation amet deserunt in laboris proident ut voluptate veniam laboris Lorem officia eu.",
+    "price": 222.33,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Rameon",
+    "description": "Irure aliquip culpa mollit do.",
+    "price": 423.48,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Zipak",
+    "description": "Ullamco nostrud nisi dolore aliqua Lorem ipsum est in tempor.",
+    "price": 56.42,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Ziggles",
+    "description": "Ipsum culpa esse dolor ea officia deserunt incididunt esse nulla.",
+    "price": 65.82,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Venoflex",
+    "description": "Irure dolor proident sint nisi nulla in dolor sunt ad nulla do dolor et aute.",
+    "price": 326.56,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Design"
+  },
+  {
+    "title": "Isbol",
+    "description": "Et dolore incididunt amet aute anim dolore cillum laborum est.",
+    "price": 463.57,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Kengen",
+    "description": "Commodo consectetur quis labore adipisicing consequat laborum labore do.",
+    "price": 43.03,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Giocattoli"
+  },
+  {
+    "title": "Netility",
+    "description": "Commodo incididunt irure ea anim incididunt et officia mollit.",
+    "price": 310.31,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Viagrand",
+    "description": "Quis nisi amet laboris sit ex ipsum aliqua dolore deserunt officia commodo.",
+    "price": 187.01,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Ovium",
+    "description": "Magna commodo quis tempor nulla ullamco aute deserunt.",
+    "price": 316.65,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Genekom",
+    "description": "Amet dolore reprehenderit aliqua ullamco sint reprehenderit deserunt amet labore laboris.",
+    "price": 578.1,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Enervate",
+    "description": "Mollit nisi tempor minim adipisicing consequat esse esse in nisi est fugiat occaecat id.",
+    "price": 498.46,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Design"
+  },
+  {
+    "title": "Gluid",
+    "description": "Lorem voluptate magna nostrud elit labore veniam nostrud proident magna irure.",
+    "price": 831.51,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Temorak",
+    "description": "Ipsum dolore ut occaecat labore veniam Lorem aliqua ex ea occaecat.",
+    "price": 57.12,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Phormula",
+    "description": "Est amet fugiat nulla nostrud anim anim cillum ad aute adipisicing irure irure.",
+    "price": 469.76,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Arctiq",
+    "description": "Irure dolor aliqua Lorem eiusmod reprehenderit labore do nisi nisi nisi commodo.",
+    "price": 228.6,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Newcube",
+    "description": "Non fugiat incididunt incididunt Lorem esse.",
+    "price": 331.58,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Quinex",
+    "description": "Id nostrud fugiat exercitation veniam minim.",
+    "price": 111.58,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Insuresys",
+    "description": "Ut quis ea esse eiusmod ad dolore nisi cillum.",
+    "price": 775.28,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Zappix",
+    "description": "Tempor in cillum tempor deserunt pariatur sunt elit qui tempor nisi.",
+    "price": 265.56,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Blanet",
+    "description": "Esse consectetur laboris id exercitation velit adipisicing officia laborum sunt cupidatat laboris cillum Lorem aliquip.",
+    "price": 77.06,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Design"
+  },
+  {
+    "title": "Glasstep",
+    "description": "Pariatur velit fugiat nostrud veniam voluptate aliquip incididunt excepteur id labore dolor labore.",
+    "price": 178.67,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Template"
+  },
+  {
+    "title": "Turnabout",
+    "description": "Est commodo ullamco fugiat nisi irure laborum in non fugiat in.",
+    "price": 19.29,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Zidant",
+    "description": "Anim et aliquip dolore elit velit est velit.",
+    "price": 492.79,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Pulze",
+    "description": "Pariatur sit officia elit qui quis.",
+    "price": 549.73,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Abbigliamento"
+  },
+  {
+    "title": "Sulfax",
+    "description": "In magna ipsum minim aute.",
+    "price": 607.91,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Xanide",
+    "description": "Ea laborum ea laboris deserunt reprehenderit esse Lorem et magna.",
+    "price": 194,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Empirica",
+    "description": "Excepteur incididunt irure aute occaecat sunt ea laborum non veniam amet.",
+    "price": 129.73,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Miracula",
+    "description": "Ex officia qui ut aliqua magna.",
+    "price": 987.8,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Comtrek",
+    "description": "Dolore amet sint eiusmod laboris deserunt deserunt duis ad ipsum.",
+    "price": 212.42,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  },
+  {
+    "title": "Menbrain",
+    "description": "Consequat eiusmod nulla non sit dolore enim quis.",
+    "price": 790.63,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Sport"
+  },
+  {
+    "title": "Stucco",
+    "description": "Adipisicing laboris commodo elit sunt ea labore deserunt consequat ipsum commodo.",
+    "price": 108.75,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Abbigliamento"
+  },
+  {
+    "title": "Zensor",
+    "description": "Nulla excepteur aute irure laboris sit laborum laborum et.",
+    "price": 334.71,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Geoforma",
+    "description": "Officia culpa Lorem exercitation exercitation esse eiusmod eu officia.",
+    "price": 790.14,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Comvoy",
+    "description": "Reprehenderit enim ea dolor nostrud voluptate magna aliquip aliquip sit occaecat labore deserunt ipsum excepteur.",
+    "price": 468.38,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Design"
+  },
+  {
+    "title": "Kog",
+    "description": "Labore ea tempor ullamco officia dolore voluptate est laborum ad.",
+    "price": 83.02,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "UI"
+  },
+  {
+    "title": "Zanity",
+    "description": "Cupidatat ea esse labore ea eiusmod officia.",
+    "price": 375.26,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Elettronica"
+  },
+  {
+    "title": "Xixan",
+    "description": "Reprehenderit ipsum ex excepteur velit ex dolore.",
+    "price": 558.19,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
+  },
+  {
+    "title": "Zuvy",
+    "description": "Excepteur dolor mollit quis ex reprehenderit ipsum eiusmod pariatur magna nostrud id reprehenderit.",
+    "price": 673.24,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "Graphics"
+  },
+  {
+    "title": "Ginkle",
+    "description": "Et esse exercitation cillum quis sit cupidatat nisi do enim deserunt adipisicing consequat qui non.",
+    "price": 570.87,
+    "imageUrl": "assets/placeholder-image.webp",
+    "category": "3D"
   }
 ]

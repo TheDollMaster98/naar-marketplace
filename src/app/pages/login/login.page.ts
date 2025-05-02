@@ -32,7 +32,7 @@ import {
     KENDO_NOTIFICATION,
   ],
   templateUrl: './login.page.html',
-  styleUrls: ['./login.page.css'],
+  styleUrl: './login.page.css',
 })
 export class LoginPage {
   private readonly authService = inject(AuthService);
