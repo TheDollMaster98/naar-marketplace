@@ -15,3 +15,7 @@
   height: 25.25rem;
   object-fit: cover;
 }
+
+.side-image-container {
+  background-color: var(--color-primary-dark);
+}
