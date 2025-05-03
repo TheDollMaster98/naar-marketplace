@@ -7,7 +7,7 @@ import { ItemCardComponent } from '../../components/item-card/item-card.componen
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselScrollComponent, ItemCardComponent],
+  imports: [CarouselScrollComponent],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })

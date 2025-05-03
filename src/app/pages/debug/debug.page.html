@@ -5,7 +5,8 @@
     <ul class="list-unstyled">
       @for (user of users(); track user.email) {
       <li class="mb-3">
-        <strong>{{ user.firstName }} {{ user.lastName }}</strong><br />
+        Nome e congome:<strong>{{ user.firstName }} {{ user.lastName }}</strong
+        ><br />
         Email: {{ user.email }}<br />
         Username: {{ user.username }}<br />
         Data di Nascita: {{ user.birthDate | date: 'dd/MM/yyyy' }}<br />

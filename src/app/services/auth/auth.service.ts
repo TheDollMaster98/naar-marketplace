@@ -8,8 +8,23 @@ export class AuthService {
   // Lista utenti registrati
   private readonly _users = signal<User[]>([]);
 
+  // Controllo se l'utente è loggato
+  private readonly _loggedIn = signal<boolean>(false);
+
   // ! Ho messo private e readonly per evitare di modificare la lista di users dall'esterno del servizio.
   readonly users = this._users.asReadonly();
+
+  isLoggedIn(): boolean {
+    return this._loggedIn();
+  }
+
+  login() {
+    this._loggedIn.set(true);
+  }
+
+  logout() {
+    this._loggedIn.set(false);
+  }
 
   // metodo per aggiungere un utente alla lista di utenti registrati
   registerUser(user: User): void {
@@ -21,6 +36,13 @@ export class AuthService {
     const user = this._users().find(
       (u) => u.username === username && u.password === password
     );
+
+    if (!user) {
+      console.log('Utente non trovato!');
+      return false;
+    }
+    this.login();
+
     return !!user;
   }
 

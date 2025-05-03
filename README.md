@@ -65,6 +65,7 @@ For more information on using the Angular CLI, including detailed command refere
 ```
 signals:
 https://angular.dev/guide/components/inputs
+
 ```
 
 ```
@@ -76,6 +77,7 @@ https://angular.dev/api/core/inject
 https://alyshovtapdig.medium.com/inject-vs-constructor-in-angular-which-one-should-you-use-en-dbdf1070739c#:~:text=Advantages%20and%20Disadvantages%20of%20Both,()%20is%20a%20better%20choice.
 
 https://www.youtube.com/watch?v=SMFhsSQvsEc
+
 ```
 
 ```
@@ -86,9 +88,24 @@ https://angular.dev/api/forms/FormGroup
 
 https://angular.dev/guide/forms/form-validation
 
+```
+
+```
 Angular FORM: https://www.youtube.com/watch?v=COgVXd4rd_8
 
+```
+
+```
+
 fake chiamata MOCK API: https://www.youtube.com/watch?v=9gK9H9-PQB8
+
+```
+
+```
+Rotte con i guardiani:
+
+https://angular.dev/api/router/CanActivate
+https://raghuvardhankaranam.medium.com/route-guards-in-angular-c2c01fe6167b
 ```
 
 # Librerie:
@@ -96,49 +113,62 @@ fake chiamata MOCK API: https://www.youtube.com/watch?v=9gK9H9-PQB8
 ## Kendo:
 
 ```
+
 https://www.telerik.com/kendo-angular-ui/components/getting-started
 
 https://www.telerik.com/kendo-angular-ui/components/notification
-  ng add @progress/kendo-angular-grid
+ng add @progress/kendo-angular-grid
+
 ```
 
 ```
+
 Style:
 https://www.telerik.com/kendo-angular-ui/components/styling
 
 https://www.telerik.com/design-system/docs/themes/kendo-themes/default/theme-variables/
+
 ```
 
 ```
-  ho messo loro per ora:
-  ng add @progress/kendo-angular-inputs
-  ng add @progress/kendo-angular-label
-  ng add @progress/kendo-angular-dateinputs
-  ng add @progress/kendo-angular-tooltip
-  ng add @progress/kendo-angular-layout
-  ng add @progress/kendo-angular-notification
+
+ho messo loro per ora:
+ng add @progress/kendo-angular-inputs
+ng add @progress/kendo-angular-label
+ng add @progress/kendo-angular-dateinputs
+ng add @progress/kendo-angular-tooltip
+ng add @progress/kendo-angular-layout
+ng add @progress/kendo-angular-notification
+
 ```
 
 # Assets:
 
 ```
+
 https://icons.getbootstrap.com
+
 ```
 
 ```
+
 https://www.figma.com/community/file/1108082731170738492
+
 ```
 
 # Esempi:
 
 ```
+
 side bard bootstrap 5:
 https://getbootstrap.com/docs/5.3/examples/sidebars/#
+
 ```
 
 # CSS:
 
 ```
+
 Come fixare sidebar, navbar, main per dargli spazio:
 https://css-tricks.com/almanac/properties/p/position/
 
@@ -173,26 +203,29 @@ https://css-tricks.com/custom-scrollbars-in-webkit/
 # Palette:
 
 ```
+
 Alla fine non ho seguito al 100% la palette e mi son messo a cercare colori scuri, visto che mi piace di più la dark mode (ho lasciato il viola nelle card per pigrizia):
 https://coolors.co/palette/fbfbfb-2b0a3d-8d00f9-be9fd6
 
 https://colors.dopely.top/color-pedia/202124
 https://colors.dopely.top/color-pedia/202124#colorUse
+
 ```
 
 # MOCK JSON & Fake Chiamata API
 
 ```
+
 ci ho messo ore per capirlo, ma credo di aver capito come crearlo
 [
-  '{{repeat(100)}}',
-  {
-    title: '{{company()}}',
-    description: '{{lorem(1, "sentences")}}',
-    price: '{{floating(10, 1000, 2)}}',
-    imageUrl: 'assets/placeholder-image.webp',
-    category: '{{random("Elettronica", "Abbigliamento", "Giocattoli", "Sport", "3D", "UI", "Design", "Graphics", "Template")}}'
-  }
+'{{repeat(100)}}',
+{
+title: '{{company()}}',
+description: '{{lorem(1, "sentences")}}',
+price: '{{floating(10, 1000, 2)}}',
+imageUrl: 'assets/placeholder-image.webp',
+category: '{{random("Elettronica", "Abbigliamento", "Giocattoli", "Sport", "3D", "UI", "Design", "Graphics", "Template")}}'
+}
 ]
 
 https://json-generator.com
@@ -201,4 +234,13 @@ fake chiamata MOCK API: https://www.youtube.com/watch?v=9gK9H9-PQB8
 
 RxJS: https://rxjs.dev/guide/observer
 https://rxjs.dev/api
+
+```
+
+```
+
+```
+
+```
+
 ```

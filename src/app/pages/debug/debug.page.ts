@@ -12,11 +12,11 @@ import { AuthService } from '../../services/auth/auth.service';
   styleUrl: './debug.page.css',
 })
 export class DebugPage {
-  private readonly authService = inject(AuthService);
+  private readonly _authService = inject(AuthService);
 
-  readonly users = this.authService.users; // signal<User[]>
+  readonly users = this._authService.users; // signal<User[]>
 
   clearUsers(): void {
-    this.authService.clear();
+    this._authService.clear();
   }
 }
