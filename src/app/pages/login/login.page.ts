@@ -35,12 +35,12 @@ import {
   styleUrl: './login.page.css',
 })
 export class LoginPage {
-  private readonly authService = inject(AuthService);
+  private readonly _authService = inject(AuthService);
   // readonly registeredUsers = this.registerService.registerUser;
   // ! Visto che non va nel HTML, lo metto private
-  private readonly router = inject(Router);
+  private readonly _router = inject(Router);
   // notifica di login con Kendo Notification
-  private readonly notificationService = inject(NotificationService);
+  private readonly _notificationService = inject(NotificationService);
 
   @ViewChild('password') public textbox!: TextBoxComponent;
   public eye: SVGIcon = eyeIcon;
@@ -71,11 +71,13 @@ export class LoginPage {
       return;
     }
 
+    // REFACTORY inerente a riga 79:  salvo su email e password i valori del form per usarli per la notifica
     const { email, password } = this.form.value;
+    const success = this._authService.loginUser(email, password);
 
-    if (this.authService.loginUser(email, password)) {
+    if (success) {
       this.showLoginNotification('Login effettuato con successo!', 'success');
-      this.router.navigate(['/products']);
+      this._router.navigate(['/products']);
     } else {
       this.showLoginNotification('Credenziali non valide!', 'error');
     }
@@ -86,7 +88,7 @@ export class LoginPage {
   }
 
   showLoginNotification(message: string, type: 'success' | 'error'): void {
-    this.notificationService.show({
+    this._notificationService.show({
       content: message,
       hideAfter: 3000,
       position: { horizontal: 'center', vertical: 'bottom' },

@@ -12,7 +12,7 @@ import { AuthService } from '../../services/auth/auth.service';
 })
 export class SidebarComponent {
   private readonly _authService = inject(AuthService);
-  readonly isLoggedIn = this._authService.isLoggedIn;
+  isLoggedIn = this._authService.isLoggedIn();
 
   sections = [
     { icon: 'bi-house', title: 'Home', route: '/home' },
