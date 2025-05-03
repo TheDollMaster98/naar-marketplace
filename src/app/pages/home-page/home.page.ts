@@ -1,11 +1,13 @@
 import { MockItemsService } from '../../services/mock/mock-items.service';
 import { Component, inject, signal } from '@angular/core';
+import { CarouselScrollComponent } from '../../components/carousel-scroll/carousel-scroll/carousel-scroll.component';
+import { Category } from '../../models/card.model';
 import { ItemCardComponent } from '../../components/item-card/item-card.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ItemCardComponent],
+  imports: [CarouselScrollComponent],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })
@@ -21,12 +23,17 @@ export class HomePage {
   private readonly mockService = inject(MockItemsService);
   readonly items = this.mockService.items; // è signal<Item[]>
 
+  readonly sideItems = this.mockService.sideItems;
+  readonly carouselItems = this.mockService.carouselItems;
+
+  readonly categories = Category; // ENUM delle categorie
+
   //TODO: se riesco aggiungo il loading
   isLoading = signal<boolean>(true);
 
   // Carico i dati al caricamento del componente
   ngOnInit(): void {
-    this.mockService.loadItems();
+    this.mockService.loadAll();
     console.log('Items:', this.items());
   }
 }

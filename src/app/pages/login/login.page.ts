@@ -32,7 +32,7 @@ import {
     KENDO_NOTIFICATION,
   ],
   templateUrl: './login.page.html',
-  styleUrls: ['./login.page.css'],
+  styleUrl: './login.page.css',
 })
 export class LoginPage {
   private readonly authService = inject(AuthService);
@@ -75,7 +75,7 @@ export class LoginPage {
 
     if (this.authService.loginUser(email, password)) {
       this.showLoginNotification('Login effettuato con successo!', 'success');
-      this.router.navigate(['/home']);
+      this.router.navigate(['/products']);
     } else {
       this.showLoginNotification('Credenziali non valide!', 'error');
     }

@@ -1,29 +1,122 @@
-<div class="carousel-wrapper">
-  <h2 class="mb-3">Recent Releases</h2>
-  <div class="carousel-scroll">
-    <div>
-      @for (item of items(); track item.title) {
-      <span>
-        <app-item-card
-          [title]="item.title"
-          [description]="item.description"
-          [price]="item.price"
-          [imageUrl]="item.imageUrl"
-        />
-      </span>
-      }
+<!-- TODO: cambiare qualche foto per farlo divewrso -->
+
+<div class="container-fluid my-5 bg-home">
+  <div class="row">
+    <!-- carosello -->
+    <div class="col-lg-8">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          @for (item of carouselItems(); let i = $index; track item.title) {
+          <div class="carousel-item" [class.active]="i === 0">
+            <img
+              [src]="item.imageUrl"
+              class="d-block w-100 carousel-image"
+              [alt]="item.title"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fw-bold">{{item.title}}</h5>
+              <p class="fw-bold">{{item.description}}</p>
+            </div>
+          </div>
+          }
+        </div>
+
+        <!-- Controls -->
+        <!-- disabilitati per ora perché sembra figo senza -->
+        <!-- <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
     </div>
-    <div>
-      @for (item of items(); track item.title) {
-      <span>
-        <app-item-card
-          [title]="item.title"
-          [description]="item.description"
-          [price]="item.price"
-          [imageUrl]="item.imageUrl"
-        />
-      </span>
+
+    <!-- Lista a destra -->
+    <div class="col-lg-4 d-flex flex-column gap-4">
+      @for (item of sideItems(); track item.title) {
+      <div
+        class="d-flex side-image-container text-white rounded overflow-hidden shadow-sm"
+      >
+        <img [src]="item.imageUrl" class="img-fluid side-image" />
+        <div class="px-2 pt-2">
+          <h3 class="mb-1">{{ item.title }}</h3>
+          <h6>{{ item.description }}</h6>
+        </div>
+      </div>
       }
     </div>
   </div>
+</div>
+
+<div class="carousel-wrapper">
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.ELECTRO"
+  ></app-carousel-scroll>
+</div>
+
+<div class="carousel-wrapper">
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.SUIT"
+  ></app-carousel-scroll>
+</div>
+
+<div class="carousel-wrapper">
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.TOYS"
+  ></app-carousel-scroll>
+</div>
+
+<div class="carousel-wrapper">
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.GRAPHIC3D"
+  ></app-carousel-scroll>
+</div>
+
+<div class="carousel-wrapper">
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.UI"
+  ></app-carousel-scroll>
+</div>
+
+<div class="carousel-wrapper">
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.DESIGN"
+  ></app-carousel-scroll>
+</div>
+
+<div class="carousel-wrapper">
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.GRAPHIC"
+  ></app-carousel-scroll>
+</div>
+
+<div class="carousel-wrapper">
+  <app-carousel-scroll
+    [items]="items()"
+    [genre]="categories.OTHERS"
+  ></app-carousel-scroll>
 </div>

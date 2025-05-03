@@ -1,7 +1,7 @@
 <div class="flex-grow-1" kendoTooltip position="right">
   <ul class="nav nav-pills flex-column mb-auto text-center">
     @for (section of sections; track section.route) {
-    <li>
+    <li [class.d-none]="section.title === 'Products' && isLoggedIn">
       <a
         routerLink="{{ section.route }}"
         routerLinkActive="active"

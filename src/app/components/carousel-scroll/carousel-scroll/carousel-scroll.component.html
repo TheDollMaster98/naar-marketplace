@@ -1,0 +1,45 @@
+<div class="carousel-wrapper container-fluid">
+  <!-- <h3 class="mb-3 text-start">
+    {{ genre() }}
+  </h3> -->
+
+  <!-- bottoni per lo scroll -->
+  <div class="pb-2 d-flex justify-content-between">
+    <h3 class="mb-3 text-start text-white">
+      {{ genre() }}
+    </h3>
+    <div>
+      <button
+        kendoButton
+        class="me-2 carousel-scroll-button-custom"
+        [svgIcon]="arrowLeft"
+        (click)="scrollLeft()"
+      ></button>
+      <button
+        kendoButton
+        class="carousel-scroll-button-custom"
+        [svgIcon]="arrowRight"
+        (click)="scrollRight()"
+      ></button>
+    </div>
+  </div>
+
+  <div class="position-relative">
+    <!-- Scroll container -->
+    <div
+      class="carousel-scroll-container d-flex overflow-auto px-4"
+      #scrollContainer
+    >
+      @for (item of items() | filter: genre(); track item.title) {
+      <div class="carousel-slide flex-shrink-0 me-3 pb-3">
+        <app-item-card
+          [title]="item.title"
+          [description]="item.description"
+          [price]="item.price"
+          [imageUrl]="item.imageUrl"
+        ></app-item-card>
+      </div>
+      }
+    </div>
+  </div>
+</div>
