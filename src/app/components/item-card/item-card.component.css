@@ -1,9 +1,16 @@
 .card {
-  background-color: var(--color-bg);
-  color: var(--color-dark);
-  border: 3px solid var(--color-accent);
-  width: 18.75rem;
-  height: 10rem;
+  background-color: #2c2e32;
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--color-text-light);
+
+  /* h5 {
+    color: #f5f5f5;
+  }
+
+  p {
+    color: #a3a3a3;
+  } */
 }
 
 .card:hover {
@@ -15,7 +22,8 @@
 }
 
 .card-title {
-  color: var(--color-primary);
+  color: #f5f5f5;
+  padding-bottom: 0.25rem;
 }
 
 /* messo lui per non fare andare il testo a capo e per aggiungere i ... */
@@ -26,6 +34,7 @@
   text-overflow: ellipsis;
   max-width: 100%;
   display: block;
+  color: #a3a3a3;
 }
 
 .card-footer {

@@ -165,12 +165,19 @@ https://web.dev/articles/css-scroll-snap?hl=it
 https://www.reddit.com/r/angular/comments/1cobwnw/filtering_on_for_in_angular_17/
 https://www.youtube.com/watch?app=desktop&v=kHPm_AlxP7U
 
+Scrollbar:
+https://css-tricks.com/custom-scrollbars-in-webkit/
+
 ```
 
 # Palette:
 
 ```
+Alla fine non ho seguito al 100% la palette e mi son messo a cercare colori scuri, visto che mi piace di più la dark mode (ho lasciato il viola nelle card per pigrizia):
 https://coolors.co/palette/fbfbfb-2b0a3d-8d00f9-be9fd6
+
+https://colors.dopely.top/color-pedia/202124
+https://colors.dopely.top/color-pedia/202124#colorUse
 ```
 
 # MOCK JSON & Fake Chiamata API

@@ -23,6 +23,9 @@ export class HomePage {
   private readonly mockService = inject(MockItemsService);
   readonly items = this.mockService.items; // è signal<Item[]>
 
+  readonly sideItems = this.mockService.sideItems;
+  readonly carouselItems = this.mockService.carouselItems;
+
   readonly categories = Category; // ENUM delle categorie
 
   //TODO: se riesco aggiungo il loading
@@ -30,7 +33,7 @@ export class HomePage {
 
   // Carico i dati al caricamento del componente
   ngOnInit(): void {
-    this.mockService.loadItems();
+    this.mockService.loadAll();
     console.log('Items:', this.items());
   }
 }

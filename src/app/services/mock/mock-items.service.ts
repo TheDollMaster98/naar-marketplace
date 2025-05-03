@@ -56,10 +56,28 @@ export class MockItemsService {
   private readonly _items = signal<Item[]>([]);
   readonly items = computed(() => this._items());
 
+  // 1: https://www.fab.com/listings/c8670596-b8c5-4073-901d-fe36cfd5daa8
+  // 2: https://www.fab.com/listings/4d0490ce-21fd-45ab-b020-e3700b498c53
+  // 3: https://www.fab.com/listings/d595671e-fd2b-448f-ad20-95b2ca9feb9e
+  // 4: https://www.fab.com/listings/5bd7045e-b0ae-45a4-ab00-72b2060ab4c5
+
+  private readonly _sideItems = signal<Item[]>([]);
+  readonly sideItems = computed(() => this._sideItems());
+
+  private readonly _carouselItems = signal<Item[]>([]);
+  readonly carouselItems = computed(() => this._sideItems());
+
   constructor(private http: HttpClient) {}
 
   // * RxJS: https://rxjs.dev/guide/observer
   // * https://rxjs.dev/api
+
+  // messo per non richiamare tutti i metodi nella home
+  loadAll(): void {
+    this.loadItems();
+    this.loadSideItems();
+    this.loadCarouselItems();
+  }
 
   /**
    * Carica gli items del JSON e li memorizza in un signal
@@ -68,6 +86,20 @@ export class MockItemsService {
   loadItems(): void {
     this.http.get<Item[]>('assets/mocks/items.json').subscribe({
       next: (data) => this._items.set(data),
+      error: (err) => console.error('Errore nel caricamento dei dati:', err),
+    });
+  }
+
+  loadSideItems(): void {
+    this.http.get<Item[]>('assets/mocks/sideImages.json').subscribe({
+      next: (data) => this._sideItems.set(data),
+      error: (err) => console.error('Errore nel caricamento dei dati:', err),
+    });
+  }
+
+  loadCarouselItems(): void {
+    this.http.get<Item[]>('assets/mocks/mainCarousel.json').subscribe({
+      next: (data) => this._sideItems.set(data),
       error: (err) => console.error('Errore nel caricamento dei dati:', err),
     });
   }

@@ -4,19 +4,20 @@
   </h3> -->
 
   <!-- bottoni per lo scroll -->
-  <div class="pb-3 d-flex justify-content-between">
-    <h3 class="mb-3 text-start">
+  <div class="pb-2 d-flex justify-content-between">
+    <h3 class="mb-3 text-start text-white">
       {{ genre() }}
     </h3>
     <div>
       <button
         kendoButton
-        class="me-2"
+        class="me-2 carousel-scroll-button-custom"
         [svgIcon]="arrowLeft"
         (click)="scrollLeft()"
       ></button>
       <button
         kendoButton
+        class="carousel-scroll-button-custom"
         [svgIcon]="arrowRight"
         (click)="scrollRight()"
       ></button>

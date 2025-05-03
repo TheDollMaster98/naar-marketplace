@@ -8,3 +8,7 @@
   width: 300px;
   scroll-snap-align: start;
 }
+
+.carousel-scroll-button-custom {
+  background-color: #a3a3a3;
+}
