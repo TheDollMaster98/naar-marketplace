@@ -20,11 +20,11 @@ export class HomePage {
   // * Più chiaro, diretto e compatto rispetto alla classica dependency injection.
 
   // ! Non usare const quando si usa inject, altrimenti non si può usare il signal.
-  private readonly mockService = inject(MockItemsService);
-  readonly items = this.mockService.items; // è signal<Item[]>
+  private readonly _mockService = inject(MockItemsService);
+  readonly items = this._mockService.items; // è signal<Item[]>
 
-  readonly sideItems = this.mockService.sideItems;
-  readonly carouselItems = this.mockService.carouselItems;
+  readonly sideItems = this._mockService.sideItems;
+  readonly carouselItems = this._mockService.carouselItems;
 
   readonly categories = Category; // ENUM delle categorie
 
@@ -33,7 +33,7 @@ export class HomePage {
 
   // Carico i dati al caricamento del componente
   ngOnInit(): void {
-    this.mockService.loadAll();
+    this._mockService.loadAll();
     console.log('Items:', this.items());
   }
 }

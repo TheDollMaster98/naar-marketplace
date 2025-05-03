@@ -1,4 +1,4 @@
-import { computed, Pipe, PipeTransform, Signal } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'filter',

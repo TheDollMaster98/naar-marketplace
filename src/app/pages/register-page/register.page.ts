@@ -47,7 +47,7 @@ export class RegisterPage {
 
   readonly form: FormGroup;
 
-  private readonly authService = inject(AuthService);
+  private readonly _authService = inject(AuthService);
   // readonly registeredUsers = this.registerService.registerUser;
 
   constructor(
@@ -98,7 +98,7 @@ export class RegisterPage {
       // Simula la registrazione dell'utente
       console.log('Form inviato:', this.form.value);
 
-      this.authService.registerUser({
+      this._authService.registerUser({
         firstName: this.form.value.firstName,
         lastName: this.form.value.lastName,
         username: this.form.value.email, // alla fine ho scelto la email come username
