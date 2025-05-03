@@ -236,11 +236,3 @@ RxJS: https://rxjs.dev/guide/observer
 https://rxjs.dev/api
 
 ```
-
-```
-
-```
-
-```
-
-```
