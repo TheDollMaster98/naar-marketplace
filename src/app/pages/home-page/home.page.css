@@ -19,3 +19,10 @@
 .side-image-container {
   background-color: var(--color-primary-dark);
 }
+/* quello dell'imagine me lo ricordo più da Flutter che da HTML se devo essere sincero, essendo più noioso da gestire da mobile che web */
+.side-image {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
