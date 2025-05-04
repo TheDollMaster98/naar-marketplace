@@ -1,8 +1,6 @@
-import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
 import { HomePage } from './pages/home-page/home.page';
 import { RegisterPage } from './pages/register-page/register.page';
-import { ProductsPage } from './pages/products/products.page';
 import { LoginPage } from './pages/login/login.page';
 import { DebugPage } from './pages/debug/debug.page';
 import { authGuard } from './core/guard/auth/auth.guard';
