@@ -16,10 +16,12 @@
 
 html,
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  /* TODO: capire se lasciarlo nel main o body ho dovuto mettere così almeno tolgo overflow hidden nel body*/
+  min-height: calc(100vh - var(--navbar-height));
   padding: 0;
   margin: 0;
-  overflow: hidden; /*TODO: provvisorio o fisso? per ora messo per non far scrollare la pagina e nascondere le parti "sporche". in caso in futuro metterò solo per la X o Y, da capire */
+  /*overflow: hidden; /*TODO: provvisorio o fisso? per ora messo per non far scrollare la pagina e nascondere le parti "sporche". in caso in futuro metterò solo per la X o Y, da capire */
   scrollbar-color: #666 #201c29; /* copiata ispezionando la scrollbar di https://css-tricks.com/custom-scrollbars-in-webkit/ */
 }
 

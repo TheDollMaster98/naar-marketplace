@@ -29,3 +29,10 @@ main {
   padding: 1rem;
   /* background-color: var(--color-bg-dark); */
 }
+
+/* non avendo mai creato una sidebar, sto improvvisando, non so se sia giusto questo approccio per nasconderla da cell */
+@media (max-width: 767.98px) {
+  main {
+    margin-left: 0;
+  }
+}

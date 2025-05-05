@@ -3,11 +3,12 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { filter } from 'rxjs';
+import { FooterComponent } from './components/footer/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, SidebarComponent],
+  imports: [RouterOutlet, NavbarComponent, SidebarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -19,7 +20,10 @@ export class AppComponent {
     this.router.events
       .pipe(filter((e): e is NavigationEnd => e instanceof NavigationEnd))
       .subscribe((event) => {
-        if (event.urlAfterRedirects === '/home') {
+        if (
+          event.urlAfterRedirects === '/home' ||
+          event.urlAfterRedirects === '/'
+        ) {
           document.body.classList.add('dark-home');
         } else {
           document.body.classList.remove('dark-home');
