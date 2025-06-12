@@ -168,7 +168,7 @@ https://getbootstrap.com/docs/5.3/examples/sidebars/#
 # CSS:
 
 ```
-
+il senior mi disse di iniziare ad usare di pi [class] che ngClass, non ricordo bene la spiegazione ma perché diceva che dava problemi e forse verrà deprecata blabla, non ricordo sincermente sorry, sto suando [class] però
 Come fixare sidebar, navbar, main per dargli spazio:
 https://css-tricks.com/almanac/properties/p/position/
 
