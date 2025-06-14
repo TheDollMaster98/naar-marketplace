@@ -168,7 +168,7 @@ https://getbootstrap.com/docs/5.3/examples/sidebars/#
 # CSS:
 
 ```
-il senior mi disse di iniziare ad usare di pi [class] che ngClass, non ricordo bene la spiegazione ma perché diceva che dava problemi e forse verrà deprecata blabla, non ricordo sincermente sorry, sto suando [class] però
+il senior mi disse di iniziare ad usare di più [class] che ngClass, non ricordo bene la spiegazione ma perché diceva che dava problemi e forse verrà deprecata blabla, non ricordo sincermente sorry, sto suando [class] però
 Come fixare sidebar, navbar, main per dargli spazio:
 https://css-tricks.com/almanac/properties/p/position/
 
@@ -235,4 +235,175 @@ fake chiamata MOCK API: https://www.youtube.com/watch?v=9gK9H9-PQB8
 RxJS: https://rxjs.dev/guide/observer
 https://rxjs.dev/api
 
+```
+
+# DOCKER (Dev)
+
+Questo progetto può essere eseguito in un container Docker per lo sviluppo locale.
+
+- Tutorial: [Docker Dev + Angular](https://www.youtube.com/watch?v=-o5l6zFJ9_o)
+- Comandi CheatSheet: [Docker Cheat Sheet (PDF)](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+
+## Comandi Docker
+
+## Dockerfile (Angular 17 – Dev Mode)
+
+```dockerfile
+FROM node:20.12.2-alpine3.20
+WORKDIR /app
+
+# Copia solo le dipendenze per sfruttare la cache
+COPY package*.json ./
+RUN npm install -g @angular/cli@17.3.16
+RUN npm install
+
+# Copia il resto del progetto
+COPY . .
+
+EXPOSE 4200
+CMD ["ng", "serve", "--host", "0.0.0.0"]
+```
+
+---
+
+# DOCKER (Dev)
+
+Questo progetto può essere eseguito in un container Docker per lo sviluppo locale.
+
+- Tutorial: [Docker Dev + Angular](https://www.youtube.com/watch?v=-o5l6zFJ9_o)
+- Comandi CheatSheet: [Docker Cheat Sheet (PDF)](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+
+## Dockerfile (Angular 17 – Dev Mode)
+
+```
+FROM node:20.12.2-alpine3.20
+WORKDIR /app
+
+# Copia package.json e package-lock.json (migliore per cache Docker)
+COPY package*.json ./
+
+# Installa CLI Angular e le dipendenze
+RUN npm install -g @angular/cli@17.3.16
+RUN npm install
+
+# Copia il resto del progetto (src/, angular.json, ecc.)
+COPY . .
+
+# Espone la porta Angular
+EXPOSE 4200
+
+# Avvia l'app Angular in modalità sviluppo
+CMD ["ng", "serve", "--host", "0.0.0.0"]
+```
+
+## Guida passo-passo (Dev Locale)
+
+### Build dell’immagine:
+
+```
+docker build -t naar-marketplace .
+```
+
+- -t naar-marketplace: assegna un nome all’immagine
+
+- .: indica il contesto attuale (dove si trova il Dockerfile)
+
+### Avvio del container
+
+```
+docker run -p 4200:4200 naar-marketplace
+```
+
+- -p 4200:4200: mappa la porta del container sulla macchina
+
+- l'App disponibile su http://localhost:4200
+
+### Stop container
+
+- l’ID del container:
+
+```
+docker ps
+```
+
+- Poi esegui:
+
+```
+docker stop <CONTAINER_ID>
+```
+
+### Rimuovere container e immagine
+
+- Mostra anche i container terminati
+
+```
+docker ps -a
+```
+
+- Rimuove un container
+
+```
+docker rm <CONTAINER_ID>
+```
+
+- Rimuove l'immagine
+
+```
+docker image rm naar-marketplace
+```
+
+### Altri comandi Docker utili
+
+- Mostra i container attivi
+
+```
+docker ps
+```
+
+- Mostra tutti i container (anche terminati):
+
+```
+docker ps -a
+```
+
+- Ferma un container:
+
+```
+docker stop <ID>
+```
+
+- Rimuove un container:
+
+```
+docker rm <ID>
+```
+
+- Mostra tutte le immagini disponibili:
+
+```
+docker images
+```
+
+- Rimuove un'immagine con ID:
+
+```
+docker image rm <ID>
+```
+
+- Rimuove immagine per nome:
+
+```
+docker rmi <nome>
+```
+
+- Mostra i log del container:
+
+```
+docker logs <ID>
+```
+
+- Entra in una shell nel container:
+
+```
+docker exec -it <ID> sh
 ```
