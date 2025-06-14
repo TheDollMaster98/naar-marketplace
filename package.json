@@ -4,6 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "docker:dev": "npm run docker:dev-clean && npm run docker:dev-run",
+    "docker:dev-run": "docker run -p 4200:4200 --name angular-dev naar-marketplace",
+    "docker:dev-clean": "docker rm -f angular-dev || exit 0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

@@ -308,6 +308,23 @@ docker build -t naar-marketplace .
 
 - .: indica il contesto attuale (dove si trova il Dockerfile)
 
+### Avvio del container in questo progetto:
+
+```
+npm run docker:dev:reset
+```
+
+- nel package.json è presente lo script:
+
+```
+"scripts": {
+    "docker:dev": "npm run docker:dev-clean && npm run docker:dev-run",
+    "docker:dev-run": "docker run -p 4200:4200 --name angular-dev naar-marketplace",
+    "docker:dev-clean": "docker rm -f angular-dev || exit 0",
+}
+
+```
+
 ### Avvio del container
 
 ```
@@ -354,7 +371,7 @@ docker image rm naar-marketplace
 
 ### Altri comandi Docker utili
 
-- Mostra i container attivi
+- Mostra i container attivi:
 
 ```
 docker ps
