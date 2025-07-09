@@ -1,0 +1,21 @@
+# Utila versione stabile di Node.js e Alpine Linux
+FROM node:24-alpine3.21 AS build
+
+# Imposta la cartella di lavoro nel container
+WORKDIR /app
+
+# Copia solo i file di package per sfruttare la cache Docker (best practice)
+COPY package*.json ./
+
+# Installa CLI Angular globalmente (stessa versione del progetto)
+RUN npm install -g @angular/cli@17.3.16
+
+# Installa le dipendenze del progetto
+RUN npm install
+COPY . .
+
+# Espone la porta 4200 usata da 'ng serve'
+EXPOSE 4200
+
+# Avvia Angular CLI in modalità dev
+CMD ["ng", "serve", "--host", "0.0.0.0"]

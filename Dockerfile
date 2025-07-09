@@ -1,21 +1,22 @@
-# Utila versione stabile di Node.js e Alpine Linux
-FROM node:20.12-alpine
+# STEP 1: build Angular app
+FROM node:24-alpine3.21 AS build
 
-# Imposta la cartella di lavoro nel container
 WORKDIR /app
 
-# Copia solo i file di package per sfruttare la cache Docker (best practice)
 COPY package*.json ./
-
-# Installa CLI Angular globalmente (stessa versione del progetto)
-RUN npm install -g @angular/cli@17.3.16
-
-# Installa le dipendenze del progetto
-COPY . .
 RUN npm install
+COPY . .
 
-# Espone la porta 4200 usata da 'ng serve'
-EXPOSE 4200
+RUN npm run build --configuration=production
 
-# Avvia Angular CLI in modalità dev
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+# STEP 2: serve Angular con nginx
+FROM nginx:1.29-alpine
+
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copia i file corretti dalla build Angular
+COPY --from=build /app/dist/naar-marketplace/browser /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

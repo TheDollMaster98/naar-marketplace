@@ -424,3 +424,13 @@ docker logs <ID>
 ```
 docker exec -it <ID> sh
 ```
+
+# Build + far partire il file buildato
+
+```
+ng build
+```
+
+```
+npx serve dist/naar-marketplace/browser
+```
